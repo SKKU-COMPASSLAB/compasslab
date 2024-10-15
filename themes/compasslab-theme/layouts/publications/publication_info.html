@@ -9,13 +9,7 @@
 
       <div class="row justify-content-center pb-5">
         <div>
-          <!-- START: Thumbnail -->
-          {{ with (.Resources.ByType "image").GetMatch .Params.Pub_thumbnail }}
-            <div class="d-none d-xl-block" style="height: 450px; padding: 30px 10px 0 10px; overflow: hidden;">
-              <img class="d-none d-xl-block" src="{{ .Permalink }}" alt="{{ .Title }}" style="width: auto; height: 100%; margin: auto; object-fit: contain; object-position: center;">
-            </div>
-          {{ end }}
-          <!-- END -->
+          
 
           <!-- START: Publication title -->
           {{ $pub_url_exist := false }}
@@ -32,7 +26,6 @@
               {{ $cls_url := ($site.GetPage .).Permalink }}
               <a class="btn btn-outline-primary fs-5 fw-semibold" style="padding: 0 5px 0 5px; margin: 0 8px 6px 0" href="{{ $cls_url }}">{{ $pub_cls }}</a>
             {{ end }}
-            
             {{ with .Title }}
               {{ if $pub_url_exist }}
                 <a class="text-black-61 fs-3 fw-bold custom-link" href="{{ $pub_url }}">{{ . }}</a>

@@ -15,7 +15,8 @@ params:
     interests: [   # TODO: fill out your research interests
         "Computer Architecture", 
         "Memory Systems",
-        "CXL"
+        "CXL",
+        "SSIT Course"
     ]
 
     biography: |   # TODO: fill out your short biography... Introduce yourself! (if you don't want to upload your biography, comment or remove this whole section!)

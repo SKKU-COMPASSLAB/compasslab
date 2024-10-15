@@ -10,13 +10,23 @@
       </div>
       <div class="row g-4 pb-5">
         {{ range sort (.Paginate .RegularPages).Pages "Weight" }}
-          <a class="card text-decoration-none custom-pub-card-body" style="padding: 20px;" href="{{ .Permalink }}">
+          <a class="card text-decoration-none custom-pub-card-body" style="padding: 20px;">
+          <!-- <a class="card text-decoration-none custom-pub-card-body" style="padding: 20px;" href="{{ .Permalink }}"> -->
             <div class="row">
               <!-- START: Project Info -->
               <div class="col-12 col-lg-8">
                 <div class="text-decoration-none text-black-61 custom-link">
                   <h5><b>{{ .Title }}</b></h5>
                   <p style="text-align: justify">{{ .Params.Pub_desc }}</p>
+
+                  <!-- START: Research Topics -->
+                  Research topics:
+                  <ul>
+                    {{ range (split .Params.Research_topics ",") }}
+                      <li style="text-align: justify">{{ . }}</li>
+                    {{ end }}
+                  </ul>
+                  <!-- END: Research Topics -->
                 </div>
               </div>
               <!-- END -->

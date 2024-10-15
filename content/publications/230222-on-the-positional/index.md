@@ -50,4 +50,5 @@ params:
     #   - OS  : Operating Systems
     #   - NDP : Near Data Processing / Processing In Memory
     pub_class: "MS"  # choose any class of the publication
+    pub_tier: "SCIE"
 ---

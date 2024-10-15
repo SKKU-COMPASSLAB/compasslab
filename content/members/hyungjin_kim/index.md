@@ -12,7 +12,8 @@ params:
     profile_image: hyungjin.jpg  # TODO: put the filename of the profile image here 
 
     interests: [   # TODO: fill out your research interests
-        "Storage System"
+        "Storage System",
+        "SSIT Course"
     ]
 
     enable_sections:  # TODO: this section checks whether to show "Experiences", "Awards and Honors", "Activities" (publications will automatically be added to your page)

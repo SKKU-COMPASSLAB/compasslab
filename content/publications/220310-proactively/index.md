@@ -15,7 +15,7 @@ params:
         - "Limei Peng"
         - "/members/seokin_hong"
 
-    pub_venue: "DAC '22: Proceedings of the 59th ACM/IEEE Design Automation Conference"  # full venue name (conference and journal name)
+    pub_venue: "IEEE Access"  # full venue name (conference and journal name)
 
     pub_url: https://ieeexplore.ieee.org/abstract/document/9732463/  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_thumbnail: "thumbnail.png"  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)
@@ -44,4 +44,5 @@ params:
     #   - OS  : Operating Systems
     #   - NDP : Near Data Processing / Processing In Memory
     pub_class: "MS"  # choose any class of the publication
+    pub_tier: "SCIE"
 ---

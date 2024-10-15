@@ -16,7 +16,7 @@ params:
         - "Prashant J. Nair"
         - "/members/seokin_hong"
 
-    pub_venue: "2023 32nd International Conference on Parallel Architectures and Compilation Techniques (PACT)"  # full venue name (conference and journal name)
+    pub_venue: "2023 32nd International Conference on Parallel Architectures and Compilation Techniques (PACT) (Poster)"  # full venue name (conference and journal name)
 
     pub_url: https://ieeexplore.ieee.org/abstract/document/10364579  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_thumbnail: "thumbnail.png"  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)
@@ -40,4 +40,5 @@ params:
     #   - OS  : Operating Systems
     #   - NDP : Near Data Processing / Processing In Memory
     pub_class: "CA"  # choose any class of the publication
+    pub_tier: "Top-tier"
 ---

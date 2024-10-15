@@ -1,7 +1,7 @@
 <div class="col-12 col-md-6 col-lg-3">
   <a class="card text-decoration-none h-100" style="border-width: 0;" href="{{ .Permalink }}">
     <!-- START: Show Portrait Image -->
-    <div class="aspect-ratio-1x1">
+    <div class="aspect-ratio-1x1" style="width: 55%; height: auto; margin: 0 auto;">
       {{ $profile_shown := false }}
       {{ with (.Resources.ByType "image").GetMatch .Params.Profile_image }}
         {{ $profile_shown = true }}
@@ -16,7 +16,7 @@
     <!-- END -->
 
     <!-- START: Show Personal Information (Name, Research Interests) -->
-    <div class="card-body" style="padding: 16px; padding-left: 10%; padding-right: 10%;">
+    <div class="card-body" style="padding: 16px; padding-left: 1%; padding-right: 10%;">
       <h5 class="card-title fw-semibold" style="text-align: center;">{{ .Title }}</h5>
       <ul style="list-style-position: outside;">
         {{ range .Params.Interests }}

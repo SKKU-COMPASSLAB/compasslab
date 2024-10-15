@@ -35,4 +35,6 @@ params:
     #   - OS  : Operating Systems
     #   - NDP : Near Data Processing / Processing In Memory
     pub_class: "ACC"  # choose any class of the publication
+    pub_tier: "Major"
+    
 ---

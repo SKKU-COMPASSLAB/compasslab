@@ -5,7 +5,7 @@ title:  Taein Kim    # your name
 date:   2024-06-06
 
 params:
-    position:  "Undergraduate"  # one of ["Principal Investigator", "PhD Course", "Master Course", "Undergraduate", Alumni]
+    position:  "Master Course"  # one of ["Principal Investigator", "PhD Course", "Master Course", "Undergraduate", Alumni]
     job_title: "Researcher"     # all of the students should specify the title of himself as a "Researcher"
     email:     "xovnd2010@g.skku.edu"         # school email address
     

@@ -6,7 +6,7 @@ date:   2024-06-06
 
 params:
     position:  "Principal Investigator"  # one of ["Principal Investigator", "PhD Course", "Master Course", "Undergraduate", Alumni]
-    job_title: "Assistant Professor"     # all of the students should specify the title of himself as a "Researcher"
+    job_title: "Associate Professor"     # all of the students should specify the title of himself as a "Researcher"
     telephone: "+82-31-299-4915"         # phone number (if you don't want to upload your phone number, comment or remove this line!)
     email:     "seokin@skku.edu"         # school email address
     
@@ -18,7 +18,7 @@ params:
     ]
 
     biography: |   # fill out your short biography... Introduce yourself!
-        I am an Assistant Professor in the Department of Semiconductor Systems Engineerings at Sungkyunkwan University (SKKU). My major research experiences and interests include the design of low power, reliable, and high-performance microarchitectures and memory systems. I received the PhD in Computer Science from KAIST, Korea, in 2015. Prior to joining SKKU, I was a Research Scientist at IBM TJ Watson Research Center and a Senior Engineer at Samsung Electronics.
+        I am an Associate Professor in the Department of Semiconductor Systems Engineerings at Sungkyunkwan University (SKKU). My major research experiences and interests include the design of low power, reliable, and high-performance microarchitectures and memory systems. I received the PhD in Computer Science from KAIST, Korea, in 2015. Prior to joining SKKU, I was a Research Scientist at IBM TJ Watson Research Center and a Senior Engineer at Samsung Electronics.
 
     enable_sections:
         enable_experiences:   true  # enable "Professional Experience" section
@@ -27,8 +27,13 @@ params:
 
     experiences:  # provide your professional experiences
         - {
-            exp_from: "2021",  # start-date of this experience
+            exp_from: "2024",  # start-date of this experience
             exp_to:   "",      # end-date of this experience (make this field empty if you are currently going through this experience)
+            exp_desc: "Associate Professor at Sungkyunkwan University"
+        }
+        - {
+            exp_from: "2021",  # start-date of this experience
+            exp_to:   "2024",      # end-date of this experience (make this field empty if you are currently going through this experience)
             exp_desc: "Assistant Professor at Sungkyunkwan University"
         }
         - {

@@ -1,0 +1,43 @@
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="card text-decoration-none h-100" style="border-width: 0;">
+    <!-- START: Show Portrait Image -->
+    <!-- 이미지 크기를 조정하려면 비율과 스타일을 수정합니다 -->
+    <div class="aspect" style="width: 100%; height: auto;"> <!-- 비율을 변경하거나 스타일을 추가합니다 -->
+      {{ $profile_shown := false }}
+      {{ with (.Resources.ByType "image").GetMatch .Params.Profile_image }}
+        {{ $profile_shown = true }}
+        <!-- 이미지의 크기를 크게 하기 위해 스타일을 변경 -->
+        <img src="{{ .Permalink }}" alt="Profile Image" class="img-fluid" style="width: 150%; height: auto;">
+      {{ end }}
+    </div>
+    <!-- END -->
+    <div class="card-body" style="padding: 16px; padding-left: 10%; padding-right: 10%;">
+      <h5 class="card-title fw-semibold" style="text-align: center;">{{ .Title }}</h5>
+      <p class="card-title fw-semibold text-black-61 fs-6" style="text-align: center;">{{ .Params.Job_title }}</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-12 col-md-6 col-lg-8">
+  <div class="card text-decoration-none h-100" style="border-width: 0;">
+    {{ with .Params.Biography }}
+      <h5 class="text-black-61" style="margin: 10px; margin-bottom: 5px"><b>Biography</b></h5>
+      <p class="text-black-61" style="margin: 10px; margin-top: 0px; text-align: justify">{{ . }}</p>
+    {{ end }}
+
+    {{ with .Params.Interests }}
+      <h5 class="text-black-61" style="margin: 10px; margin-bottom: 5px"><b>Research Interests</b></h5>
+      <ul style="list-style-position: outside;">
+        {{ range . }}
+          <li class="text-black-61" style="margin: 0px; margin-left: 10px; margin-right: 10px">{{ . }}</li>
+        {{ end }}
+      </ul>
+    {{ end }}
+    
+    <p class="text-black-61" style="margin: 10px; margin-top: 0px">
+      {{ with .Params.Email }}<b>Email: </b>{{ . }} &nbsp;&nbsp;{{ end }}
+      {{ with .Params.Telephone }}<b>Tel: </b>{{ . }}{{ end }}
+    </p>
+  </div>
+</div>

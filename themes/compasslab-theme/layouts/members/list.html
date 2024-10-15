@@ -10,7 +10,7 @@
         {{ if eq .Params.Position "Principal Investigator" }}
           <a class="card text-decoration-none h-100" style="border-width: 0;" href="{{ .Permalink }}">
             <div class="row g-4 pb-5">
-              {{ partial "utilities/members-detailed-portrait" . }}
+              {{ partial "utilities/members-professor-portrait.html" . }}
             </div>
           </a>
         {{ end }}

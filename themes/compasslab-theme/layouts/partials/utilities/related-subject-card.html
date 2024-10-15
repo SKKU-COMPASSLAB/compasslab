@@ -1,0 +1,10 @@
+{{ $proj_title := index . "title" }}
+{{ $proj_fund  := index . "fund" }}
+<div style="width: 100%; padding: 10px; padding-left: 0px;">
+  <div class="card text-decoration-none h-100">
+    <div class="card-body">
+      <h5 class="card-title fw-semibold">{{ $proj_title}}</h5>
+      <p class="card-text text-black-61" style="display: inline-block;"><b>{{ $proj_fund }}</b></p>
+    </div>
+  </div>
+</div>

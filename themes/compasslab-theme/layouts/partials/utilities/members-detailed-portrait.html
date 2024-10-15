@@ -1,7 +1,7 @@
 <div class="col-12 col-md-6 col-lg-3">
   <div class="card text-decoration-none h-100" style="border-width: 0;">
     <!-- START: Show Portrait Image -->
-    <div class="aspect-ratio-1x1">
+    <div class="aspect-ratio-1x1" style="width: 55%; height: auto; margin: 0 auto;">
       {{ $profile_shown := false }}
       {{ with (.Resources.ByType "image").GetMatch .Params.Profile_image }}
         {{ $profile_shown = true }}

@@ -1,0 +1,53 @@
+{{ define "main" }}
+  <section class="section blog-single py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-xl-12 pb-5">
+          <h2 class="fs-1 fw-bold text-center text-primary">{{ .Title }}</h2>
+        </div>
+      </div>
+
+      <div class="row g-4 pb-5">
+        <!-- START: Project Info -->
+        <div class="col-12 col-lg-7">
+          <div class="card text-decoration-none h-100 text-black-61" style="border-width: 0; text-align: justify; margin-right: 20px;">
+            {{ .Params.Pub_desc }}
+          </div>
+        </div>
+        <!-- END -->
+
+        <!-- START: Project Thumbnail -->
+        <div class="col-12 col-lg-5" style="margin: auto;">
+          {{ with (.Resources.ByType "image").GetMatch .Params.Pub_thumbnail }}
+            <img class="" src="{{ .Permalink }}" alt="{{ .Title }}" style="width: 100%">
+          {{ end }}
+        </div>
+        <!-- END -->
+      </div>
+
+      <!-- START: Publications -->
+      <div class="row g-4 pb-5">
+        <h5 class="text-black-61 fs-4"><b>Related Publications</b></h5>
+        {{ $pub_cnt := 0 }}
+        <ul style="list-style-position: outside; margin-top: 0px; margin-bottom: 0px">
+          {{ $site := .Site }}
+          {{ $target_class := .Params.Pub_class }}
+          {{ with .Site.GetPage "/publications/" }}
+            {{ range .Pages }}
+              {{ $pub_class := .Params.Pub_class }}
+              {{ if eq $pub_class $target_class}}
+                {{ partial "utilities/publication-card" . }}
+                {{ $pub_cnt = add $pub_cnt 1}}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        </ul>
+
+        {{ if eq $pub_cnt 0}}
+          <p class="text-black-61 fw-semibold" style="text-align: center;"> There's no publications related to {{ .Title }}! </p>
+        {{ end }}
+      </div>
+      <!-- END -->
+    </div>
+  </section>
+{{ end }}

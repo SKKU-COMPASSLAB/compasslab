@@ -38,11 +38,11 @@ params:
   path_prefix: /compasslab
   
   pubClasses:
-    ACC: /projects/accelerator
-    CA:  /projects/computer_architecture
-    MS:  /projects/memory_system
-    NDP: /projects/near_data_processing
-    OS:  /projects/operating_systems
+    ACC: /subjects/accelerator
+    CA:  /subjects/computer_architecture
+    MS:  /subjects/memory_system
+    NDP: /subjects/near_data_processing
+    OS:  /subjects/operating_systems
 
 menus:
   main:
@@ -63,7 +63,7 @@ menus:
       weight: 4
 
     - name: "Projects"
-      url: "/projects"
+      url: "/subjects"
       weight: 5
 
     - name: "Publications"
