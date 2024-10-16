@@ -23,16 +23,16 @@ params:
 
   experiences: # provide your professional experiences
     - {
-        exp_from: "2022",
+        exp_from: "2023",
         exp_to:   "",
-        exp_desc: "Combined B.S/M.S program in the Department of Electrical and Computer Engineering at Sungkyunkwan University",
+        exp_desc: "Master Course in the Department of Electrical and Computer Engineering at Sungkyunkwan University",
       }
     - {
         exp_from: "2017", # start-date of this experience
         exp_to:   "2023", # end-date of this experience (make this field empty if you are currently going through this experience)
-        exp_desc: "B.S. in the School of Electronic and Electrical Engineering at Sungkyunkwan University",
+        exp_desc: "B.E. in the School of Electronic and Electrical Engineering at Sungkyunkwan University",
       }
 
   awards_honor: # provide the list of awards that you won
-    - SKKU Summa Cum Laude (B.S)
+    - Summa Cum Laude (B.E)
 ---
