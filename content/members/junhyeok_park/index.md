@@ -34,5 +34,5 @@ params:
       }
 
   awards_honor: # provide the list of awards that you won
-    - Summa Cum Laude (B.E)
+    - Summa Cum Laude (B.E.)
 ---
