@@ -19,7 +19,7 @@
         <!-- START: Project Thumbnail -->
         <div class="col-12 col-lg-5" style="margin: auto;">
           {{ with (.Resources.ByType "image").GetMatch .Params.Pub_thumbnail }}
-            <img class="" src="{{ .Permalink }}" alt="{{ .Title }}" style="width: 100%">
+            <img class="" src="{{ .Permalink }}" alt="{{ .Title }}" style="width: 100%; margin-top: 30px;">
           {{ end }}
         </div>
         <!-- END -->

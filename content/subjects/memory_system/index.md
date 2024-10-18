@@ -9,7 +9,7 @@ params:
     pub_class: "MS"  # FIXED! DO NOT CHANGE!
 
     pub_desc: |
-        The memory system plays a crucial role in modern computer architectures. Especially, contemporary architectures are highly parallelized and often incorporate multiple cores within a single processor, demanding a capability for addressing multiple memory operations simultaneously. That's why recent memory systems employ shared cache memory for multiple CPU cores and use NUMA (Non-Uniform Memory Access) architecture for multiple processors.
+        Memory Systems research focuses on the design and optimization of memory hierarchies to balance speed, capacity, and energy efficiency in computing systems. It covers components like caches, main memory (DRAM), and secondary storage (SSDs), aiming to reduce latency and increase bandwidth for data-intensive applications. Key research areas include techniques such as memory prefetching, dynamic allocation, and new non-volatile memory technologies like phase-change memory (PCM). Memory systems also address challenges in maintaining consistency and coherence across multi-core processors. This research is crucial in managing large-scale data workloads in modern applications like AI, big data, and cloud computing.
 
     enable_related_subjects: false
     related_subjects:

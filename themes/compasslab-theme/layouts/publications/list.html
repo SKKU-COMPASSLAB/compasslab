@@ -67,10 +67,10 @@
 
               <!-- 제목에 링크 포함 -->
               <a class="text-decoration-none d-inline" href="{{ .Permalink }}">
-                <h5 class="title fw-semibold mb-1 d-inline">{{ .Title }}</h5>
+                <h5 class="card-title fw-semibold">{{ .Title }}</h5>
               </a>
 
-              <p class="text text-black-61 mb-1">{{ .Params.pub_venue }}</p> <!-- 텍스트 간의 간격을 줄이기 위해 mb-1 추가 -->
+              <p class="conf-text text-black-61 mb-1" >{{ .Params.pub_venue }}</p> <!-- 텍스트 간의 간격을 줄이기 위해 mb-1 추가 -->
               <div class="pb-1">
                 {{ $site := .Site }}
                 <ul style="list-style: none; margin: 0; padding: 0;">
@@ -85,9 +85,9 @@
                     <li class="" style="display: inline-block;">
                       {{ if $author_url_exist }}
                         {{ $author_url := ($site.GetPage .).Permalink }}
-                        <p class="text-black-61 fs-8" style="margin: 0; padding: 0; padding-right: 10px" href="{{ $author_url }}">{{ $pub_author }}</p>
+                        <p class="conf-text fs-8" style="margin: 0; padding: 0; padding-right: 10px" href="{{ $author_url }}">{{ $pub_author }}</p>
                       {{ else }}
-                        <p class="text-black-61 fs-8" style="margin: 0; padding: 0; padding-right: 10px">{{ $pub_author }}</p>
+                        <p class="conf-text fs-8" style="margin: 0; padding: 0; padding-right: 10px">{{ $pub_author }}</p>
                       {{ end }}
                     </li>
                   {{ end }}

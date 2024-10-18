@@ -50,9 +50,9 @@ menus:
       url: /
       weight: 1
     
-    - name: "About"
-      url: "/about"
-      weight: 2
+#    - name: "About"
+#      url: "/about"
+#      weight: 2
 
     - name: "News"
       url: "/news"
@@ -62,21 +62,25 @@ menus:
       url: "/members"
       weight: 4
 
-    - name: "Projects"
+    - name: "Researchs"
       url: "/subjects"
       weight: 5
 
+    - name: "Projects"
+      url: "/projects"
+      weight: 6
+
     - name: "Publications"
       url: "/publications"
-      weight: 6
+      weight: 7
 
     - name: "Schedule"
       url: "/schedule"
-      weight: 7
+      weight: 8
 
     - name: "Memories"
       url: "/memories"
-      weight: 8
+      weight: 9
 
 taxonomies:
   series: "series"

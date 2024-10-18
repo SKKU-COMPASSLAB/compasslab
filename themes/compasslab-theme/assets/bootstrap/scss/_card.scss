@@ -53,6 +53,20 @@
 
 .card-title {
   margin-bottom: $card-title-spacer-y;
+  font-size: 20px;
+}
+
+/* 모바일에서 작은 크기 */
+@media (max-width: 768px) {
+  h5.card-title {
+    font-size: 15px;  
+  }
+  p.card-text{
+    font-size: 12px;
+  }
+  p.conf-text {
+    font-size: 13px;
+  }
 }
 
 .card-subtitle {

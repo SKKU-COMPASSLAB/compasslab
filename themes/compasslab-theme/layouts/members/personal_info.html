@@ -23,7 +23,7 @@
                   {{ $exp_to   := index . "exp_to" }}
                   {{ $exp_desc := index . "exp_desc" }}
                   {{ if eq $exp_from "" }}{{ $exp_from = $exp_to }}{{ end }}
-                  <li class="text-black-61 fs-6" style="margin: 0px; margin-left: 30px; margin-bottom: 5px;">
+                  <li class="text-black-61 fs-7" style="margin: 0px; margin-left: 30px; margin-bottom: 5px;">
                     <p style="width: 40px; display: inline-block; margin: 0px">{{ $exp_from }}</p> - <p style="width: 40px; display: inline-block; margin: 0px">{{ $exp_to }}</p> &nbsp;&nbsp; {{ $exp_desc }}
                   </li>
                 {{ end }}
@@ -38,7 +38,7 @@
               <h5 class="text-black-61 fs-4"><b>Awards and Honors</b></h5>
               <ul style="list-style-position: outside; margin-top: 0px; margin-bottom: 0px">
                 {{ range .Params.Awards_honor }}
-                  <li class="text-black-61 fs-6" style="margin: 0px; margin-left: 30px; margin-bottom: 5px;"> {{ . }} </li>
+                  <li class="text-black-61 fs-7" style="margin: 0px; margin-left: 30px; margin-bottom: 5px;"> {{ . }} </li>
                 {{ end }}
               </ul>
             </div>
@@ -53,7 +53,7 @@
                 {{ range .Params.Activities }}
                   {{ $act_type := index . "act_type" }}
                   {{ $act_desc := index . "act_desc" }}
-                  <li class="text-black-61 fs-6" style="margin: 0px; margin-left: 30px; margin-bottom: 5px;">
+                  <li class="text-black-61 fs-7" style="margin: 0px; margin-left: 30px; margin-bottom: 5px;">
                     <p style="display: inline-block; margin: 0px; font-weight: bold; padding-right: 10px;">[{{ $act_type }}]</p>{{ $act_desc }}
                   </li>
                 {{ end }}
