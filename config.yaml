@@ -62,7 +62,7 @@ menus:
       url: "/members"
       weight: 4
 
-    - name: "Researchs"
+    - name: "Research"
       url: "/subjects"
       weight: 5
 

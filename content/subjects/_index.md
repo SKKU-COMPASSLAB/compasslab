@@ -1,6 +1,6 @@
 ---
 aliases: ["subjects"]
-title: "Researchs"
+title: "Research"
 author: "Seongwook Kim"
 tags: ["subjects"]
 ---
