@@ -18,7 +18,7 @@ params:
     ]
 
     biography: |
-        I am majoring Electrical and Computer Enginnering as Ph.D student at Sungkyunkwan University. I got Bachelor's degree and Master's degree at Sungkyunkwan University and my research interests include deep learning accelerator architecture and memory compression.
+        I am majoring Electrical and Computer Enginnering as Ph.D student at Sungkyunkwan University. I got Bachelor's degree and Master's degree at Sungkyunkwan University and my research interests include deep learning accelerator architecture.
 
     enable_sections:
         enable_experiences:   true
