@@ -9,49 +9,48 @@
 
       <div class="row justify-content-center pb-5">
         <div>
-          
-
           <!-- START: Publication title -->
-          {{ $pub_url_exist := false }}
-          {{ $pub_url := "" }}
-          {{ with .Params.Pub_url }}
-              {{ $pub_url_exist = true }}
-              {{ $pub_url = . }}
-          {{ end }}
-          
           <div class="pb-3" style="padding-top: 30px; vertical-align: middle; text-align: center">
-            {{ $site    := .Site }}
+            {{ $site := .Site }}
             {{ $pub_cls := .Params.Pub_class }}
             {{ with index .Site.Params.PubClasses $pub_cls }}
               {{ $cls_url := ($site.GetPage .).Permalink }}
               <a class="btn btn-outline-primary fs-5 fw-semibold" style="padding: 0 5px 0 5px; margin: 0 8px 6px 0" href="{{ $cls_url }}">{{ $pub_cls }}</a>
             {{ end }}
+            
             {{ with .Title }}
-              {{ if $pub_url_exist }}
-                <a class="text-black-61 fs-5 fw-bold custom-link" style="text-align: center" href="{{ $pub_url }}">{{ . }}</a>
-              {{ else }}
-                <p class="text-black-61 fs-5 fw-bold" style="text-align: center">{{ . }}</p>
-              {{ end }}
+              <p class="text-black-61 fs-5 fw-bold" style="text-align: center">{{ . }}</p>
             {{ end }}
+            
+            <!-- URL, Paper, and PPT Links Below Title -->
+            <div style="text-align: center; margin-top: 5px;">
+              {{ with .Params.Pub_url }}
+                <a class="btn btn-outline-primary fs-5 fw-semibold" style="padding: 0 5px; margin-right: 8px;" href="{{ . }}">URL</a>
+              {{ end }}
+
+              {{ with .Params.Pub_ppt }}
+                <a class="btn btn-outline-primary fs-5 fw-semibold" style="padding: 0 5px; " href="{{ . }}" download>SLIDES</a>
+              {{ end }}
+            </div>
           </div>
           <!-- END -->
 
           <!-- START: Publication Venue -->
           {{ with .Params.Pub_venue }}
-            <h4 class="text-black-50 fs-6 pb-3 fw-semibold " style="text-align: center">{{ . }}</h4>
+            <h4 class="text-black-50 fs-6 pb-3 fw-semibold" style="text-align: center">{{ . }}</h4>
           {{ end }}
           <!-- END -->
 
           <!-- START: Authors -->
           <div class="pb-4">
             {{ $site := .Site }}
-            <ul style="list-style: none; margin: 0; padding: 0; text-align: center" >
+            <ul style="list-style: none; margin: 0; padding: 0; text-align: center">
               {{ range .Params.Pub_authors }}
                 {{ $author_url_exist := false }}
                 {{ $pub_author := . }}
                 {{ with $site.GetPage . }}
-                    {{ $author_url_exist = true }}
-                    {{ $pub_author = .Title }}
+                  {{ $author_url_exist = true }}
+                  {{ $pub_author = .Title }}
                 {{ end }}
 
                 <li class="" style="display: inline-block;">
@@ -62,7 +61,7 @@
                     <p class="text-black-61 fs-7 fw-semibold" style="margin: 0; padding: 0; padding-right: 20px">{{ $pub_author }}</p>
                   {{ end }}
                 </li>
-              {{ end }} 
+              {{ end }}
             </ul>
           </div>
           <!-- END -->
@@ -81,7 +80,7 @@
               <li class="text-black-61 fs-7" style="margin: 0; padding: 0;">
                 {{ . }}
               </li>
-            {{ end }} 
+            {{ end }}
           </div>
           <!-- END -->
         </div>

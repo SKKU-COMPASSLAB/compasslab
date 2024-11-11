@@ -2,7 +2,7 @@
 layout: publication_info  # FIXED! DO NOT CHANGE!
 author: "Yongho Lee"   # your name (do not specify the publication authors, please specify publication authors at "pub_authors")
 title:  "A Case for Speculative Address Translation with Rapid Validation for GPUs"  # publication title
-date:   2024-10-14  # publication date (not the blog posting date...)
+date:   2024-11-01  # publication date (not the blog posting date...)
     
 params:
     pub_authors:  # publication authors
