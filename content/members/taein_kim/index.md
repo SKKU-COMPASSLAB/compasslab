@@ -12,7 +12,7 @@ params:
     profile_image: profile_KimTaein.jpg  # put the filename of the profile image here 
 
     interests: [   # fill out your research interests
-        "Accelerator", "Transformer Quantization"
+        "Accelerator"
     ]
 
     biography: |   # fill out your short biography... Introduce yourself!
