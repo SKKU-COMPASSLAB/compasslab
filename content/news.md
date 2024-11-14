@@ -8,6 +8,7 @@ author: "COMPASSLAB"
 
 params:
     news:
+        - "[Nov 2024] Our four papers have been accepted to DATE2025 [Major conference]. Congratulations!, Yongho, Osang, Junbum, and Seokhyun."
         - "[Nov 2024] Seongwook, Talha, Junbum, Wonyoung, Minjin and Yoonho's papers have been accepted to ICEIC 2025. Congratulation!"
         - "[July 2024] Our two papers have been accepted to MICRO2024 [Top-tier conference]. Congratulations!, Osang, Yongho, and Junhyeok."
         - "[July 2024] Sungbin's paper has been accepted to PACT2024 [Top-tier conference]. Congratulation!"

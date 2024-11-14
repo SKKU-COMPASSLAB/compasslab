@@ -18,7 +18,7 @@ params:
 
     pub_url: https://ieeexplore.ieee.org/abstract/document/10212679  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_thumbnail: "thumbnail.png"  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)
-    pub_ppt: "김성욱_ITC-CSCC2023.pptx"
+    pub_ppt: "230625-CAESAR/김성욱_ITC-CSCC2023.pptx"
 
     pub_abstract: |  # abstract of your publication
         Convolutional Neural Networks (CNN) have shown outstanding performance in many computer vision applications. However, CNN Inference on mobile and edge devices is challenging due to high computation demands. Recently, many prior studies have tried to address this challenge by reducing the data precision with quantization techniques, leading to abundant redundancy in the CNN models. This paper proposes CAESAR, a CNN accelerator that eliminates redundant computations to reduce the computation demands of CNN inference. By analyzing the computation pattern of the convolution layer, CAESAR predicts the location where the redundant computations occur and removes them in the executions. After that, CAESAR remaps the remaining effectual computations on the processing elements originally mapped to the redundant computations so that all processing elements are fully utilized. Based on our evaluation with a cycle-level microarchitecture simulator, CAESAR achieves an overall speedup of up to 2.13x and saves energy by 78% over the TPU-like baseline accelerator.

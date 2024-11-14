@@ -11,18 +11,22 @@
         <div>
           <!-- START: Publication title -->
           <div class="pb-3" style="padding-top: 30px; vertical-align: middle; text-align: center">
+            
+            <!--
             {{ $site := .Site }}
             {{ $pub_cls := .Params.Pub_class }}
             {{ with index .Site.Params.PubClasses $pub_cls }}
               {{ $cls_url := ($site.GetPage .).Permalink }}
               <a class="btn btn-outline-primary fs-5 fw-semibold" style="padding: 0 5px 0 5px; margin: 0 8px 6px 0" href="{{ $cls_url }}">{{ $pub_cls }}</a>
             {{ end }}
-            
+            -->
+
             {{ with .Title }}
               <p class="text-black-61 fs-5 fw-bold" style="text-align: center">{{ . }}</p>
             {{ end }}
-            
+
             <!-- URL, Paper, and PPT Links Below Title -->
+            <!--
             <div style="text-align: center; margin-top: 5px;">
               {{ with .Params.Pub_url }}
                 <a class="btn btn-outline-primary fs-5 fw-semibold" style="padding: 0 5px; margin-right: 8px;" href="{{ . }}">URL</a>
@@ -32,6 +36,7 @@
                 <a class="btn btn-outline-primary fs-5 fw-semibold" style="padding: 0 5px; " href="{{ . }}" download>SLIDES</a>
               {{ end }}
             </div>
+            -->
           </div>
           <!-- END -->
 

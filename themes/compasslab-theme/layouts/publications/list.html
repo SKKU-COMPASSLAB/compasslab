@@ -30,50 +30,66 @@
             <div class="body text-left">
               <hr>
               
+              <!-- PubTier 텍스트를 조건에 따라 스타일 적용 -->
+              {{ $pub_conf := .Params.Pub_conf }}
+              {{ if $pub_conf }} <!-- Pub_tier가 있을 경우에만 출력 -->
+                  <span class="btn fs-6 fw-semibold d-inline" style="padding: 0 10px 0 10px; margin-right: 14px; color: black; border: 1px solid black;">
+                    {{ $pub_conf }}
+                  </span>
+
+              {{ end }}
+              <!-- END -->
+
+
               <!-- PubClasses 버튼 추가 -->
               {{ $site := .Site }}
               {{ $pub_cls := .Params.Pub_class }}
               <span style="display: inline-block;">
                 {{ with index .Site.Params.PubClasses $pub_cls }}
                   {{ $cls_url := ($site.GetPage .).Permalink }}
-                  <a class="btn btn-outline-primary fs-6 fw-semibold d-inline" style="padding: 0 5px 0 5px; margin: 0 0px 0px 0" href="{{ $cls_url }}">{{ $pub_cls }}</a>
+                  <a class="btn fs-6 fw-semibold d-inline" style="padding: 0 10px 0 10px; margin-right: 10px; color: black; border: 1px solid black;" href="{{ $cls_url }}">{{ $pub_cls }}</a>
                 {{ end }}
-              </span>
 
               <!-- PubTier 텍스트를 조건에 따라 스타일 적용 -->
               {{ $pub_tier := .Params.Pub_tier }}
               {{ if $pub_tier }} <!-- Pub_tier가 있을 경우에만 출력 -->
                 {{ if eq $pub_tier "Top-tier" }}
-                  <span class="btn fs-6 fw-semibold d-inline" style="padding: 0 10px 0 10px; margin-left: 10px; color: red; border: 1px solid red;">
+                  <span class="btn fs-6 fw-semibold d-inline" style="padding: 0 10px 0 10px; margin-right: 10px; color: red; border: 1px solid red;">
                     {{ $pub_tier }}
                   </span>
                 {{ else if eq $pub_tier "Major" }}
-                  <span class="btn fs-6 fw-semibold d-inline" style="padding: 0 10px 0 10px; margin-left: 10px; color: blue; border: 1px solid blue;">
+                  <span class="btn fs-6 fw-semibold d-inline" style="padding: 0 10px 0 10px; margin-right: 10px; color: blue; border: 1px solid blue;">
                     {{ $pub_tier }}
                   </span>
                 {{ else if eq $pub_tier "SCIE" }}
-                  <span class="btn fs-6 fw-semibold d-inline" style="padding: 0 10px 0 10px; margin-left: 10px; color: green; border: 1px solid green;">
+                  <span class="btn fs-6 fw-semibold d-inline" style="padding: 0 10px 0 10px; margin-right: 10px; color: green; border: 1px solid green;">
                     {{ $pub_tier }}
                   </span>
                 {{ else if eq $pub_tier "SCI" }}
-                  <span class="btn fs-6 fw-semibold d-inline" style="padding: 0 10px 0 10px; margin-left: 10px; color: green; border: 1px solid green;">
+                  <span class="btn fs-6 fw-semibold d-inline" style="padding: 0 10px 0 10px; margin-right: 10px; color: green; border: 1px solid green;">
                     {{ $pub_tier }}
                   </span>
                 {{ end }}
               {{ end }}
               <!-- END -->
+               
+              </span>
+
+
 
               <br>
+              
 
               <!-- 제목에 링크 포함 -->
-              <a class="text-decoration-none d-inline" href="{{ .Permalink }}">
+              <a class="text-decoration-none d-inline" style="padding: 0 0 0 0px;" href="{{ .Permalink }}">
+                <h5></h5>
                 <h5 class="card-title fw-semibold">{{ .Title }}</h5>
               </a>
 
               <p class="conf-text text-black-61 mb-1" >{{ .Params.pub_venue }}</p> <!-- 텍스트 간의 간격을 줄이기 위해 mb-1 추가 -->
               <div class="pb-1">
                 {{ $site := .Site }}
-                <ul style="list-style: none; margin: 0; padding: 0;">
+                <ul style="list-style: none; margin: 0 0 0 0; padding: 0 0 0 0;">
                   {{ range .Params.Pub_authors }}
                     {{ $author_url_exist := false }}
                     {{ $pub_author := . }}
@@ -94,6 +110,24 @@
                 </ul>
               </div>
 
+            </div>
+
+            <div style="text-align: left; margin-top: 5px;">
+              {{ with .Params.Pub_url }}
+                <p class="conf-text fs-8" style="margin: 0; padding: 0; padding-right: 0px; display: inline;">Paper:
+                <a class="btn fs-8 d-inline" style="padding: 0 10px 0 0px; margin-right: 0px; " href="{{ . }}">
+                  <img src="/images/icon-paper.png" alt="Paper Icon" style="width: 20px; height: 20px; vertical-align: middle; margin-left: 0px;">
+                </a>
+                </p>
+              {{ end }}
+
+              {{ with .Params.Pub_ppt }}
+              <p class="conf-text fs-8" style="margin: 0; padding: 0; padding-right: 0px; display: inline;">Slides:
+                <a class="btn fs-8 d-inline" style="padding: 0 10px 0 0px; " href="{{ . }}" download>
+                  <img src="/images/icon-ppt2.png" alt="Paper Icon" style="width: 22px; height: 22px; vertical-align: middle; margin-left: 0px;">
+                </a>
+                </p>
+              {{ end }}
             </div>
           </div>
         {{ end }}
