@@ -1,15 +1,15 @@
 ---
 layout: publication_info  # FIXED! DO NOT CHANGE!
 author: "Osang Kwon"   # your name (do not specify the publication authors, please specify publication authors at "pub_authors")
-title:  "Zebra: Leveraging Diagonal Attention Pattern for Vision Transformer Accelerator"  # publication title
+title:  "Buddy ECC in CXL Memory System: Enhancing Error Protection through Bandwidth Optimization"  # publication title
 date:   2025-03-31  # publication date (not the blog posting date...)
     
 params:
     pub_authors:  # publication authors
-        - "/members/seokhyun_han"
-        - "/members/seongwook_kim"
-        - "/members/gwangeun_byeon"
-        - "/members/jihun_yoon"
+        - "/members/yongho_lee"
+        - "/members/junbum_park"
+        - "/members/osang_kwon"
+        - "/members/sungbin_jang"
         - "/members/seokin_hong"
 
     pub_venue: "2025 Design, Automation & Test in Europe Conference & Exhibition (DATE 2025)"  # full venue name (conference and journal name)
@@ -22,7 +22,7 @@ params:
 
     pub_keywords:  # keywords of your publication
         - Computer architecture
-        - Accelerator
+        - Memory System
 
     # Publication Classes: choose one of the class specified below (see more details at "config.yaml")
     #   - ACC : Accelerator
