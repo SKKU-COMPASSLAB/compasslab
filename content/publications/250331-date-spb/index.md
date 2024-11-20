@@ -2,7 +2,7 @@
 layout: publication_info  # FIXED! DO NOT CHANGE!
 author: "Osang Kwon"   # your name (do not specify the publication authors, please specify publication authors at "pub_authors")
 title:  "SPB: Towards Low-Latency CXL Memory via Speculative Protocol Bypassing"  # publication title
-date:   2024-03-31  # publication date (not the blog posting date...)
+date:   2025-03-31  # publication date (not the blog posting date...)
     
 params:
     pub_authors:  # publication authors
