@@ -2,7 +2,7 @@
 layout: publication_info  # FIXED! DO NOT CHANGE!
 author: "Osang Kwon"   # your name (do not specify the publication authors, please specify publication authors at "pub_authors")
 title:  "Zebra: Leveraging Diagonal Attention Pattern for Vision Transformer Accelerator"  # publication title
-date:   2025-03-31  # publication date (not the blog posting date...)
+date:   2024-11-19  # publication date (not the blog posting date...)
     
 params:
     pub_authors:  # publication authors
@@ -31,4 +31,5 @@ params:
     #   - OS  : Operating Systems
     #   - NDP : Near Data Processing / Processing In Memory
     pub_class: "ACC"  # choose any class of the publication
+    pub_tier: "Major"
 ---
