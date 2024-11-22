@@ -6,6 +6,8 @@ buildFuture: true
 
 summaryLength: 20
 
+paginatePath: "page"
+
 params:
   title: "COMPASSLAB"
   description: "The COMPASS LAB is a computer architecture research group in the Department of Electrical and Computer Engineering at SKKU."

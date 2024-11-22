@@ -1,5 +1,6 @@
 {{ define "main" }}
   <section class="section blog-list py-5">
+    <div class="list-news-card">
     <div class="container">
       <div class="row justify-content-center pb-5">
         <div class="col-12 col-xl-6">
@@ -10,9 +11,9 @@
       </div>
       <div class="row g-4 pb-5">
         <!-- Sort by Date in descending order -->
-        {{ $paginator := .Paginate (sort .RegularPages "Date" "desc") 10 }}
-        {{ range $paginator.Pages }}
-          <div class="text-decoration-none custom-pub-card-body" style="padding: 20px;">
+        {{ $listPaginator := .Paginate (sort .RegularPages "Date" "desc") 10 }}
+        {{ range $listPaginator.Pages }}
+          <div class="text-decoration-none list-custom-pub-card-body" style="padding: 20px;">
             <div class="row">
 
               <!-- START: Project Thumbnail with Carousel -->
@@ -29,11 +30,11 @@
                     {{ end }}
                   </div>
                   <!-- Controls -->
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-{{ .File.UniqueID }}" data-bs-slide="prev">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#list-carousel-{{ .File.UniqueID }}" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                   </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carousel-{{ .File.UniqueID }}" data-bs-slide="next">
+                  <button class="carousel-control-next" type="button" data-bs-target="#list-carousel-{{ .File.UniqueID }}" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                   </button>
@@ -59,5 +60,6 @@
         {{ template "_internal/pagination.html" . }}
       </div>
     </div>
+  </div>
   </section>
 {{ end }}
