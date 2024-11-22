@@ -55,6 +55,10 @@ menus:
 #      url: "/about"
 #      weight: 2
 
+#    - name: "News"
+#      url: "/news"
+#      weight: 3
+
     - name: "News"
       url: "/news"
       weight: 3

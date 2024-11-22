@@ -16,7 +16,7 @@
               <div class="col-12 col-lg-8">
                 <div class="text-decoration-none text-black-61 custom-link">
                   <h5><b>{{ .Title }}</b></h5>
-                  <p style="text-align: justify">{{ .Params.Pub_desc }}</p>
+                  <p style="text-align: justify">{{ .Params.Pub_desc | markdownify }}</p>
                 </div>
               </div>
               <!-- END -->

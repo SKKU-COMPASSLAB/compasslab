@@ -1,7 +1,7 @@
 ---
 layout: personal_info  # FIXED! DO NOT CHANGE!
-author: Seokhyun Han   # your name
-title:  Seokhyun Han   # your name
+author: Sukhyun Han   # your name
+title:  Sukhyun Han   # your name
 date:   2023-07-01
 
 params:

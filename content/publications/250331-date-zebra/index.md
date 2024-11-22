@@ -6,7 +6,7 @@ date:   2025-03-31  # publication date (not the blog posting date...)
     
 params:
     pub_authors:  # publication authors
-        - "/members/seokhyun_han"
+        - "/members/sukhyun_han"
         - "/members/seongwook_kim"
         - "/members/gwangeun_byeon"
         - "/members/jihun_yoon"
