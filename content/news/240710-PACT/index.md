@@ -7,7 +7,7 @@ date: 2024-07-10
 params:
 
     pub_desc: |
-        Our one paper have been accepted to International Conference on Parallel Architectures and Compilation Techniques (PACT) **[Top-tier conference]**. Congratulations!
+        Sungbin's paper has been accepted to International Conference on Parallel Architectures and Compilation Techniques (PACT) **[Top-tier conference]**. Congratulations!
 
         **Sungbin Jang** et al., "Rethinking Page Table Structure for Fast Address Translation in GPUs: A Fixed-Size Hashed Page Table".
 
