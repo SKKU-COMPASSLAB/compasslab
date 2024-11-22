@@ -11,7 +11,7 @@
         <!-- START: Project Info -->
         <div class="col-12 col-lg-7">
           <div class="card text-decoration-none h-100 text-black-61" style="border-width: 0; text-align: justify; margin-right: 20px;">
-            {{ .Params.Pub_desc }}
+            {{ .Params.Pub_desc | markdownify }}
           </div>
         </div>
         <!-- END -->

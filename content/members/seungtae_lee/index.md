@@ -10,7 +10,7 @@ params:
     # telephone: +82-10-8945-8939
     # email:     su8939@skku.edu
 
-    # profile_image: "profile.jpg"
+    profile_image: "profile.jpg"
 
     interests: [
         'AI Optimization'
