@@ -15,7 +15,7 @@ params:
 
     pub_venue: "57th IEEE/ACM International Symposium on Microarchitecture (MICRO 2024)"  # full venue name (conference and journal name)
 
-   # pub_url: https://ieeexplore.ieee.org/abstract/document/10477427  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
+    pub_url: https://doi.org/10.1109/MICRO61859.2024.00013  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_ppt: "241101-micro-dpt/DPT MICRO 2024 v1.3.pptx"
 
     pub_abstract: |  # abstract of your publication

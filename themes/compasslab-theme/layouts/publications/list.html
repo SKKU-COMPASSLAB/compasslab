@@ -18,7 +18,6 @@
           {{ $pubYear := .Date.Format "2006" }} <!-- 출판물의 연도만 추출 -->
           {{ if ne $pubYear $currentYear }} <!-- 연도가 바뀌면 새로운 섹션을 생성 -->
             {{ if ne $currentYear "" }}
-              <hr> <!-- 연도가 바뀔 때 구분선 추가 -->
             {{ end }}
             <div class="col-12">
               <br><br>

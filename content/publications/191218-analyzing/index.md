@@ -9,7 +9,7 @@ description: |  # provide a brief explanation of your work!
 
 params:
     pub_authors:  # publication authors
-        - "/members/chanhui_seok"
+        - "Chanhui Seok"
         - "/members/seokin_hong"
 
     pub_venue: "Korea Software Congress(KSC) 2019"  # full venue name (conference and journal name)
