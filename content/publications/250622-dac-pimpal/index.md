@@ -12,7 +12,7 @@ params:
         - "Jungrae Kim"
         - "/members/seokin_hong"
 
-    pub_venue: "DAC '25: Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC 2025)"  # full venue name (conference and journal name)
+    pub_venue: "2025 Design Automation Conference (DAC 2025)"  # full venue name (conference and journal name)
 
    # pub_url: https://ieeexplore.ieee.org/abstract/document/10477427  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_ppt: #"241102-icce-asia-impact/ICCE-ASIA'24, IMPACT ON RW LATENCY.pptx"
