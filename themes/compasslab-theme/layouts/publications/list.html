@@ -83,7 +83,7 @@
                 <h5 class="card-title fw-semibold">{{ .Title }}</h5>
               </a>
 
-              <p class="conf-text text-black-61 mb-1" >{{ .Params.pub_venue }}</p> <!-- 텍스트 간의 간격을 줄이기 위해 mb-1 추가 -->
+              <p class="conf-text text-black-61 mb-1" style="white-space: pre-wrap;">{{ .Params.Pub_venue | markdownify }}</p> <!-- 텍스트 간의 간격을 줄이기 위해 mb-1 추가 -->
               <div class="pb-1">
                 {{ $site := .Site }}
                 <ul style="list-style: none; margin: 0 0 0 0; padding: 0 0 0 0;">

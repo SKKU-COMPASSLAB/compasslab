@@ -15,7 +15,11 @@ params:
         - "Prashant J. Nair"
         - "/members/seokin_hong"
 
-    pub_venue: "57th IEEE/ACM International Symposium on Microarchitecture (MICRO 2024)"  # full venue name (conference and journal name)
+    pub_venue: "57th IEEE/ACM International Symposium on Microarchitecture (MICRO 2024) 
+
+                Best Paper Candidate
+                
+                Selected for IEEE Micro Top Picks (Honorable Mention)" # full venue name (conference and journal name)
 
    # pub_url: https://ieeexplore.ieee.org/abstract/document/10477427  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_thumbnail: "thumbnail.png"  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)
