@@ -6,7 +6,7 @@ date: 2025-02-17    # publication date
 
 params:
     pub_desc: |
-        Yoonho's paper has been accepted for presentation as a oral at Design Automation Conference (DAC) **[Top-tier conference]**. Congratulations!
+        Yoonho's paper has been accepted for presentation as a oral at Design Automation Conference (DAC) **[Top-tier conference]**. Congratulations! Sihyung, Heongjun, and Minjin's paper has been also accepted for poster session at DAC. 
 
         **Yoonho Jang** et al., "PIMPAL: Accelerating LLM Inference on Edge Devices via In-DRAM Arithmetic Lookup"
 
