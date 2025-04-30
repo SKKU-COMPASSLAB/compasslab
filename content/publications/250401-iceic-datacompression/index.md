@@ -1,7 +1,7 @@
 ---
 layout: publication_info  # FIXED! DO NOT CHANGE!
 author: "Minjin Park"   # your name (do not specify the publication authors, please specify publication authors at "pub_authors")
-title:  "Evaluatin Data Compression Algorithms and Their Impact on NAND Flash-Based SSDs"  # publication title
+title:  "Evaluating Data Compression Algorithms and Their Impact on NAND Flash-Based SSDs"  # publication title
 date:   2025-02-18  # publication date (not the blog posting date...)
     
 params:
