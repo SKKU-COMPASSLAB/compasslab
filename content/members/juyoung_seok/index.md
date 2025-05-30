@@ -29,11 +29,11 @@ params:
         - {
             exp_from: "2019",  # start-date of this experience
             exp_to:   "2025",      # end-date of this experience (make this field empty if you are currently going through this experience)
-            exp_desc: "Bachelor's degree in SKKU(Sungkyunkwan University) EEE(Electronic and Electrical Engineering)"
+            exp_desc: "Bachelor's degree in SKKU(Sungkyunkwan University)"
         }
         - {
             exp_from: "2025",  # start-date of this experience
             exp_to:   "",      # end-date of this experience (make this field empty if you are currently going through this experience)
-            exp_desc: "Master's degree in SKKU(Sungyunkwan University) Sungkyunkwan University Undergraduate in SKKU(Sungkyunkwan University)"
+            exp_desc: "Master's degree in SKKU(Sungyunkwan University)"
         }
 ---
