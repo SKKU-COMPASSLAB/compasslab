@@ -86,24 +86,19 @@
               <p class="conf-text text-black-61 mb-1" style="white-space: pre-wrap;">{{ .Params.Pub_venue | markdownify }}</p> <!-- 텍스트 간의 간격을 줄이기 위해 mb-1 추가 -->
               <div class="pb-1">
                 {{ $site := .Site }}
-                <ul style="list-style: none; margin: 0 0 0 0; padding: 0 0 0 0;">
-                  {{ range .Params.Pub_authors }}
-                    {{ $author_url_exist := false }}
-                    {{ $pub_author := . }}
-                    {{ with $site.GetPage . }}
-                        {{ $author_url_exist = true }}
-                        {{ $pub_author = .Title }}
-                    {{ end }}
-  
-                    <li class="" style="display: inline-block;">
-                      {{ if $author_url_exist }}
-                        {{ $author_url := ($site.GetPage .).Permalink }}
-                        <p class="conf-text fs-8" style="margin: 0; padding: 0; padding-right: 10px" href="{{ $author_url }}">{{ $pub_author }}</p>
-                      {{ else }}
-                        <p class="conf-text fs-8" style="margin: 0; padding: 0; padding-right: 10px">{{ $pub_author }}</p>
-                      {{ end }}
+                {{- $cofirst := .Params.pub_co_first_authors | default (slice) -}}
+                <ul style="list-style:none;margin:0;padding:0;">
+                  {{- range .Params.pub_authors }}
+                    {{- $origKey   := . }}                     {{/* 키 그대로 보존 */}}
+                    {{- $page      := $site.GetPage . }}
+                    {{- $name      := cond $page $page.Title . }}
+                    {{- $isCofirst := in $cofirst $origKey }}
+                    <li style="display:inline-block;">
+                      <p class="conf-text fs-8" style="margin:0;padding:0;padding-right:10px;">
+                        {{ $name }}{{ if $isCofirst }}*{{ end }}
+                      </p>
                     </li>
-                  {{ end }}
+                  {{- end }}
                 </ul>
               </div>
 

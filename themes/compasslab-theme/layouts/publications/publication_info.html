@@ -48,25 +48,22 @@
 
           <!-- START: Authors -->
           <div class="pb-4">
-            {{ $site := .Site }}
-            <ul style="list-style: none; margin: 0; padding: 0; text-align: center">
-              {{ range .Params.Pub_authors }}
-                {{ $author_url_exist := false }}
-                {{ $pub_author := . }}
-                {{ with $site.GetPage . }}
-                  {{ $author_url_exist = true }}
-                  {{ $pub_author = .Title }}
-                {{ end }}
+            {{- $site    := .Site -}}
+            {{- $cofirst := .Params.pub_co_first_authors | default (slice) -}}
 
-                <li class="" style="display: inline-block;">
-                  {{ if $author_url_exist }}
-                    {{ $author_url := ($site.GetPage .).Permalink }}
-                    <a class="text-black-61 fs-7 fw-semibold custom-link" style="margin: 0; padding: 0; padding-right: 20px" href="{{ $author_url }}">{{ $pub_author }}</a>
-                  {{ else }}
-                    <p class="text-black-61 fs-7 fw-semibold" style="margin: 0; padding: 0; padding-right: 20px">{{ $pub_author }}</p>
-                  {{ end }}
+            <ul style="list-style:none;margin:0;padding:0;text-align:center;">
+              {{- range .Params.pub_authors }}
+                {{- $origKey   := . }}                 {{/* 원본 키 (URL 또는 평문) */}}
+                {{- $page      := $site.GetPage . }}
+                {{- $name      := cond $page $page.Title . }}
+                {{- $isCofirst := in $cofirst $origKey }}
+                <li style="display:inline-block;">
+                  <p class="text-black-61 fs-7 fw-semibold"
+                    style="margin:0;padding:0;padding-right:20px;">
+                    {{ $name }}{{ if $isCofirst }}*{{ end }}
+                  </p>
                 </li>
-              {{ end }}
+              {{- end }}
             </ul>
           </div>
           <!-- END -->

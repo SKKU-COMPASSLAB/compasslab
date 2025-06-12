@@ -12,6 +12,9 @@ params:
         - "/members/sungbin_jang"
         - "Byungchul Tak"
         - "/members/seokin_hong"
+    pub_co_first_authors:
+        - "/members/osang_kwon"
+        - "/members/yongho_lee"
 
     pub_venue: "57th IEEE/ACM International Symposium on Microarchitecture (MICRO 2024)"  # full venue name (conference and journal name)
 
