@@ -87,19 +87,22 @@
               <div class="pb-1">
                 {{ $site := .Site }}
                 {{- $cofirst := .Params.pub_co_first_authors | default (slice) -}}
-                <ul style="list-style:none;margin:0;padding:0;">
                   {{- range .Params.pub_authors }}
-                    {{- $origKey   := . }}                     {{/* 키 그대로 보존 */}}
-                    {{- $page      := $site.GetPage . }}
-                    {{- $name      := cond $page $page.Title . }}
-                    {{- $isCofirst := in $cofirst $origKey }}
-                    <li style="display:inline-block;">
-                      <p class="conf-text fs-8" style="margin:0;padding:0;padding-right:10px;">
+      {{- $origKey := . }}
+      {{- $page    := $site.GetPage $origKey }}
+      {{- $name    := $origKey }}
+      {{- with $page }}
+        {{- $name = .Title }}
+      {{- end }}
+      {{- $isCofirst := in $cofirst $origKey }}
+      <li style="display:inline-block;">
+        <p class="conf-text fs-8" style="margin:0;padding:0;padding-right:10px;">
                         {{ $name }}{{ if $isCofirst }}*{{ end }}
-                      </p>
-                    </li>
-                  {{- end }}
-                </ul>
+        </p>
+      </li>
+    {{- end }}
+  </ul>
+                
               </div>
 
             </div>
