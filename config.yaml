@@ -1,5 +1,5 @@
 title: "COMPASSLAB"
-baseURL: "https://www.example.com/"
+baseURL: "https://www.example.com/compasslab"
 languageCode: "en-us"
 theme: compasslab-theme
 buildFuture: true

@@ -7,7 +7,7 @@ content:
 
   buttonPrimary:
     label: "Deep dive into COMPASSLAB!"
-    url: "/compasslab/about"  # TODO: currently the URL is hardcoded!
+    url: "/compasslab/about"  # currently the URL is hardcoded! (including pathprefix in config.yaml)
 
   buttonSecondary:
     label: "Recent News"
