@@ -8,7 +8,7 @@ params:
 
     pub_desc: |
         Gwangeun's paper has been accepted for presentation as a poster at International Conference on Parallel Architectures and Compilation Techniques (PACT) **[Top-tier conference]**. Congratulations!
-
+    pub_details: |
         **Gwangeun Byeon** et al., "SparseFT: Sparsity-aware Fault Tolerance for Reliable CNN Inference on GPUs".
 
     #**Author** et al., "Title",

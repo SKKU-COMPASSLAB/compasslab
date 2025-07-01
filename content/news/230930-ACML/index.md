@@ -8,7 +8,7 @@ params:
 
     pub_desc: |
         Seungtae's paper has been accepted to The 15th Asian Conference on Machine Learning (ACML) **[Major conference]**. Congratulation!
-
+    pub_details: |
         **Seungtae Kim** et al., "Facto-CNN: Memory-Efficient CNN Training with Low-rank Tensor Factorization and Lossy Tensor Compression".
 
     #**Author** et al., "Title",

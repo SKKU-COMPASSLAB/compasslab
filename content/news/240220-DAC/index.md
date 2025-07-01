@@ -8,7 +8,7 @@ params:
 
     pub_desc: |
         Hyungjin's paper has been accepted for presentation as a poster at Design Automation Conference (DAC) **[Top-tier conference]**. Congratulations!
-
+    pub_details: |
         **Hyungjin Kim** et al., "Don't Cache, Speculate!: Speculative Address Translation for Flash-based Storage Systems".
 
     #**Author** et al., "Title",

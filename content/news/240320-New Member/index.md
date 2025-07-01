@@ -8,7 +8,7 @@ params:
 
     pub_desc: |
         Sungbin Jang, Jihun Yoon, Hyeongjun Cho, Jiyong Jeong, Junbum Park, Minjin Park and Taejeong Kim have joined our lab. 
-        
+    pub_details: |
         Welcome!
 
     #**Author** et al., "Title",

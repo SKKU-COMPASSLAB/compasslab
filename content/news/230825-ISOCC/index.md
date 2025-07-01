@@ -8,7 +8,7 @@ params:
 
     pub_desc: |
         Gwangeun's paper has been accepted as a regular paper for The 20th International SoC Conference (ISOCC). Congratulations!
-
+    pub_details: |
         **Gwangeun Byeon** et al., "Improving Performance and Energy-efficiency of DNN Accelerators with STT-RAM Buffers".
 
     #**Author** et al., "Title",

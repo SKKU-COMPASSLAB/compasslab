@@ -7,9 +7,8 @@ date: 2023-09-20
 params:
 
     pub_desc: |
-
         Sihyung Kim, Sukhyun Han, and Talha Ahmed have joined our lab. 
-        
+    pub_details: |
         Welcome!
 
     #**Author** et al., "Title",
