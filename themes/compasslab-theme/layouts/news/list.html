@@ -45,8 +45,9 @@
               <!-- START: Project Info -->
               <div class="col-12 col-lg-8">
                 <div class="text-decoration-none text-black-61 custom-link">
-                  <h5><b>{{ .Title }}</b></h5>
+                  <h5 style="padding-top: 8px"><b>{{ .Title }}</b></h5>
                   <p style="text-align: justify">{{ .Params.pub_desc | markdownify }}</p>
+                  <p style="text-align: justify">{{ .Params.pub_details | markdownify }}</p>
                 </div>
               </div>
               <!-- END -->

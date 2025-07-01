@@ -1,59 +1,27 @@
 <section class="recent-section services py-5">
-  <div class="recent-news-card">
+<div class="recent-news-card">
   <div class="container">
-    <div class="row justify-content-center pb-5">
+    <div class="row justify-content-center" style="margin-bottom: 16px">
       <div class="col-12 col-xl-6" id="recent_news">
         {{ with .Title }}
-          <h2 class="fs-1 fw-bold text-center text-primary pb-3">Recent News</h2>
+          <h2 class="fs-1 fw-bold text-center text-primary pb-1">Recent News</h2>
         {{ end }}
       </div>
     </div>
-    <div class="row g-4 pb-5">
+    <div class="row">
       <!-- Sort by Date in descending order -->
-      {{ range first 3 (sort .RegularPages "Date" "desc") }}
-        <div class="text-decoration-none recent-custom-pub-card-body" style="padding: 20px;">
-          <div class="row">
-
-            <!-- START: Project Thumbnail with Carousel -->
-            <div class="col-12 col-lg-4" style="margin: auto;">
-              <div id="recent-carousel-{{ .File.UniqueID }}" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
-                <!-- data-bs-interval="2000" for speed adjustment -->
-                <div class="carousel-inner">
-                  {{ $index := 0 }}
-                  {{ range (.Resources.ByType "image") }}
-                    <div class="carousel-item {{ if eq $index 0 }}active{{ end }}">
-                      <img src="{{ .Permalink }}" class="d-block" alt="{{ $.Title }}" style="width: 100%; height: 250px; object-fit: contain;">
-                    </div>
-                    {{ $index = add $index 1 }}
-                  {{ end }}
-                </div>
-                <!-- Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#recent-carousel-{{ .File.UniqueID }}" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#recent-carousel-{{ .File.UniqueID }}" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
-            <!-- END -->
-
-            <!-- START: Project Info -->
-            <div class="col-12 col-lg-8">
-              <div class="text-decoration-none text-black-61 custom-link">
-                <h5><b>{{ .Title }}</b></h5>
-                <p style="text-align: justify">{{ .Params.pub_desc | markdownify }}</p>
-              </div>
-            </div>
-            <!-- END -->
-
+      {{ range first 8 (sort .RegularPages "Date" "desc") }}
+        <div class="text-decoration-none">
+          <!-- START: Project Info -->
+          <div class="text-decoration-none">
+            <p class="text-black-70" style="margin-top: 8px; margin-bottom: 0px"><b>{{ .Title }}</b></p>
+            <p class="text-black-61" style="text-align: justify; margin-bottom: 8px">{{ .Params.pub_desc | markdownify }}</p>
           </div>
+          <!-- END -->
         </div>
       {{ end }}
     </div>
-    <a class="btn btn-outline-primary" style="margin-left: 20px;" href="news/">See More</a>
+    <a class="btn btn-outline-primary" style="margin-top: 20px;" href="news/">See More</a>
   </div>
 </div>
 </section>

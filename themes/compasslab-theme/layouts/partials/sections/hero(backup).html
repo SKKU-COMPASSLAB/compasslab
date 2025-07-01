@@ -12,9 +12,9 @@
           <p class="text-center text-black-61 text-xl-start pb-4">{{ . | markdownify }}</p>
         {{ end }}
         <div class="d-flex flex-column flex-xl-row">
-          {{ with .content.buttonPrimary }}
-            <a class="btn btn-primary text-light px-4 my-1" href="{{ .url }}">{{ .label }}</a>
-          {{ end }}
+          <!-- {{ with .content.buttonPrimary }} -->
+          <!--   <a class="btn btn-primary text-light px-4 my-1" href="{{ .url }}">{{ .label }}</a> -->
+          <!-- {{ end }} -->
           {{ with .content.buttonSecondary }}
             <a class="btn btn-outline-primary px-4 my-1 ms-xl-4" href="#recent_news">{{ .label }}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a>
           {{ end }}
