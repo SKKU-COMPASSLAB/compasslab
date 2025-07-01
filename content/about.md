@@ -2,7 +2,7 @@
 layout: "about"
 title: "About"
 date: "2024-06-05"
-aliases: ["about-us", "contact"]
+aliases: ["about"]
 author: "COMPASSLAB"
 ---
 
