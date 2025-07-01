@@ -7,7 +7,7 @@ content:
 
   buttonPrimary:
     label: "Deep dive into COMPASSLAB!"
-    url: "/about"
+    url: "/compasslab/about"  # TODO: currently the URL is hardcoded!
 
   buttonSecondary:
     label: "Recent News"
