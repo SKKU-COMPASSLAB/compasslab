@@ -38,8 +38,14 @@
     {{ end }}
     
     <p class="text-black-61" style="margin: 10px; margin-top: 0px">
-      {{ with .Params.Email }}<b>Email: </b>{{ . }} &nbsp;&nbsp;{{ end }}
+      {{ with .Params.Email }}<b>Email: </b>{{ . }}{{ end }}
+      &nbsp;&nbsp;
       {{ with .Params.Telephone }}<b>Tel: </b>{{ . }}{{ end }}
+    </p>
+    <p class="text-black-61" style="margin: 10px; margin-top: 0px">
+      {{ with .Params.Blog }}<a style="text-decoration: none; padding-right: 10px" href="{{ . }}">{{ partial "icons/dribbble-lg.html" }}</a>{{ end }}
+      {{ with .Params.Linkedin }}<a style="text-decoration: none; padding-right: 10px" href="{{ . }}">{{ partial "icons/linkedin-lg.html" }}</a>{{ end }}
+      {{ with .Params.Github }}<a style="text-decoration: none; padding-right: 10px" href="{{ . }}">{{ partial "icons/github-lg.html" }}</a>{{ end }}
     </p>
   </div>
 </div>

@@ -7,8 +7,11 @@ date: 2023-01-01
 params:
     position:  "PhD Course"
     job_title: "Researcher"
-    # telephone: +82-10-8945-8939
+    telephone: 
     email:     su8939@skku.edu
+    blog:      https://github.com/bluelove8939
+    linkedin:  https://www.linkedin.com/in/seongwook-kim-9a9315351/
+    github:    https://github.com/bluelove8939
 
     profile_image: "profile.jpg"
 
