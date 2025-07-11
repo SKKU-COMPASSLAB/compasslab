@@ -6,9 +6,11 @@ date:   2025-06-25  # date
 
 params:
     gallery:
+        - "gallery/Image0.jpg"
         - "gallery/image1.jpg"  # first image will automatically be considered as a thumbnail
         - "gallery/image2.jpg"
         - "gallery/image3.jpeg"
+        
 ---
 
 ### We are invited to DAC'25!
