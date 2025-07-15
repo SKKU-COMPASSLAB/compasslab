@@ -7,7 +7,7 @@ date:   2025-10-18  # publication date (not the blog posting date...)
 params:
     pub_authors:  # publication authors
         - "/members/sungbin_jang"
-        - "/members/junheok_park"
+        - "/members/junhyeok_park"
         - "/members/yongho_lee"
         - "/members/osang_kwon"
         - "/members/donghyun_kim"
