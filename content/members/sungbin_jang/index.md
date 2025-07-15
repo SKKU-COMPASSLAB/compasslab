@@ -9,6 +9,7 @@ params:
     job_title: "Researcher"                 # TODO: all of the students should specify the title of himself as a "Researcher"
     telephone: "+82-10-5059-3361"           # TODO: phone number (if you don't want to upload your phone number, comment or remove this line!)
     email:     "sunbi3361@skku.edu"         # TODO: school email address (if you don't want to upload your email address, comment or remove this line!)
+    linkedin:  https://www.linkedin.com/in/sungbin-jang-5a5a91236/
     
     profile_image: profile.png  # TODO: put the filename of the profile image here 
 
