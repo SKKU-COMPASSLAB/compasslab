@@ -6,13 +6,15 @@ date: 2025-02-26
 
 params:
   position: "Alumni" # TODO: push your position; the position should be the one between ["Principal Investigator", "PhD Course", "Master Course", "Graduate", Alumni]
-  job_title: "Researcher" # TODO: all of the students should specify the title of himself as a "Researcher"
+  job_title: "Pre-doctoral Researcher" # TODO: all of the students should specify the title of himself as a "Researcher"
   email: "vzx00770@skku.edu" # TODO: school email address (if you don't want to upload your email address, comment or remove this line!)
-
+  blog:      https://zoon17.github.io/
+  linkedin:  https://www.linkedin.com/in/junhyeok-park-5380a8288
+    
   profile_image: jhp.jpg # TODO: put the filename of the profile image here
 
   interests: # TODO: fill out your research interests
-    ["Heterogeneous Memory System", "GPU Microarchitecture"]
+    ["Memory System", "GPU Microarchitecture and System"]
 
   enable_sections: # TODO: this section checks whether to show "Experiences", "Awards and Honors", "Activities" (publications will automatically be added to your page)
     enable_experiences: true # enable "Professional Experience" section
@@ -24,7 +26,7 @@ params:
   experiences: # provide your professional experiences
     - {
         exp_from: "2023",
-        exp_to:   "",
+        exp_to:   "2025",
         exp_desc: "Master Course in the Department of Electrical and Computer Engineering at Sungkyunkwan University",
       }
     - {
