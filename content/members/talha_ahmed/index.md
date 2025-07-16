@@ -5,7 +5,7 @@ title:  Talha Ahmed    # your name
 date:   2023-03-01
 
 params:
-    position:  "Master Course"  # one of ["Principal Investigator", "PhD Course", "Master Course", "Undergraduate", Alumni]
+    position:  "Alumni"  # one of ["Principal Investigator", "PhD Course", "Master Course", "Undergraduate", Alumni]
     job_title: "Researcher"     # all of the students should specify the title of himself as a "Researcher"
     email:     "talhaahmed@skku.edu"         # school email address
     
