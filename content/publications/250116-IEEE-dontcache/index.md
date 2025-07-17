@@ -2,7 +2,7 @@
 layout: publication_info  # FIXED! DO NOT CHANGE!
 author: "Taein Kim"   # your name (do not specify the publication authors, please specify publication authors at "pub_authors")
 title:  "Don't Cache, Speculate!: Speculative Address Translation for Flash-based Storage Systems"  # publication title
-date:   2025-02-20  # publication date (not the blog posting date...)
+date:   2025-01-16  # publication date (not the blog posting date...)
     
 params:
     pub_authors:  # publication authors

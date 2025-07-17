@@ -2,7 +2,7 @@
 layout: publication_info  # FIXED! DO NOT CHANGE!
 author: "Yoonho Jang"   # your name (do not specify the publication authors, please specify publication authors at "pub_authors")
 title:  "Redefining PIM Architecture with Compact and Power-Efficient Microscaling"  # publication title
-date:   2025-02-18  # publication date (not the blog posting date...)
+date:   2025-04-01  # publication date (not the blog posting date...)
     
 params:
     pub_authors:  # publication authors

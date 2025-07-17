@@ -2,7 +2,7 @@
 layout: publication_info  # FIXED! DO NOT CHANGE!
 author: "Jihun Yoon"   # your name (do not specify the publication authors, please specify publication authors at "pub_authors")
 title:  "Evaluating Performance of Modern GPU with Partitioned Last-Level Caches"  # publication title
-date:   2025-02-19  # publication date (not the blog posting date...)
+date:   2025-07-07  # publication date (not the blog posting date...)
     
 params:
     pub_authors:  # publication authors

@@ -2,7 +2,7 @@
 layout: publication_info  # FIXED! DO NOT CHANGE!
 author: "Jiyong Jeong"   # your name (do not specify the publication authors, please specify publication authors at "pub_authors")
 title:  "Tournament Warp Scheduling: A Dynamic Policy Selector Exploiting Sub-cores in GPUs"  # publication title
-date:   2025-02-19  # publication date (not the blog posting date...)
+date:   2025-07-07  # publication date (not the blog posting date...)
     
 params:
     pub_authors:  # publication authors
