@@ -12,9 +12,39 @@
           {{ end }}
         </div>
       </div>
+      
+      <!-- 전체 페이지 추출 -->
+      {{ $allPages := .Pages }}
+
+      <!-- Tier 별 정렬 (1차) -->
+      {{ $tieredPages := slice }} <!-- Tier 순 정렬 페이지 저장 slice -->
+      {{ $tiers := slice "Top-tier" "Major" "SCIE" "SCI" nil }} <!-- Tier 리스트 -->
+      {{ range $tier := $tiers }} <!-- Tier 리스트 순으로 추가 -->
+        {{ $filtered := where $allPages "Params.Pub_tier" $tier }}
+        {{ $tieredPages = $tieredPages | append $filtered }}
+      {{ end }}
+      
+      <!-- 연도별 정렬을 위해 전체 연도 추출 -->
+      {{ $Years := slice }} <!-- 연도 저장 slice -->
+      {{ range $tieredPages}}
+        {{ $year := .Date.Format "2006" }}
+        {{ $Years = $Years | append (dict "Page" . "Year" $year) }}
+      {{ end }}
+
+      <!-- 연도 내림차순 정렬 (2차) -->
+      {{ $yearPages := sort $Years "Year" "desc" }}
+
+      <!-- 연도별 정렬된 페이지 종합 -->
+      {{ $pagesByYear := slice }} 
+      {{ range $yearPages }}
+        {{ $pagesByYear = $pagesByYear | append .Page }}
+      {{ end }}
+
+      {{ $listPaginator := .Paginate $pagesByYear 50 }}
+
       <div class="row g-0 pb-0">
         {{ $currentYear := "" }} <!-- 현재 연도를 저장할 변수 -->
-        {{ range (.Paginate .RegularPages 50).Pages }}
+        {{ range $listPaginator.Pages }}
           {{ $pubYear := .Date.Format "2006" }} <!-- 출판물의 연도만 추출 -->
           {{ if ne $pubYear $currentYear }} <!-- 연도가 바뀌면 새로운 섹션을 생성 -->
             {{ if ne $currentYear "" }}
