@@ -5,7 +5,8 @@ title:  "2018"  # publication title
 date: 2018-12-30
 
 params:
-
+    pub_type:
+        "News"
     pub_desc: |
         - "[Nov 2018] Our collaborative work with IBM has been accepted for ASPLOS2019 [Top-tier conference]."
         - "[Sep 2018] COMPASS Lab has officially opened!"

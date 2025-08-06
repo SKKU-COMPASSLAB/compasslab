@@ -5,7 +5,8 @@ title:  "2022"  # publication title
 date: 2022-12-30
 
 params:
-
+    pub_type:
+        "News"
     pub_desc: |
         - "[Oct 2022] Osang's paper has been accepted to IEEE Access [SCIE]. Congratulation!"
         - "[Oct 2022] Osang's paper has been accepted to ICCE-ASIA 2022. Congratulation!"

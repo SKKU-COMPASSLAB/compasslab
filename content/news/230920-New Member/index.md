@@ -5,7 +5,8 @@ title:  "Sep 2023"  # publication title
 date: 2023-09-20
 
 params:
-
+    pub_type:
+        "Member"
     pub_desc: |
         Sihyung Kim, Sukhyun Han, and Talha Ahmed have joined our lab. 
     pub_details: |

@@ -2,26 +2,58 @@
 <div class="recent-news-card">
   <div class="container">
     <div class="row justify-content-center" style="margin-bottom: 16px">
-      <div class="col-12 col-xl-6" id="recent_news">
+      <div class="col-12 col-xl-6 fw-semibold" id="recent_news">
         {{ with .Title }}
           <h2 class="fs-1 fw-bold text-center text-primary pb-1">Recent News</h2>
         {{ end }}
       </div>
     </div>
     <div class="row">
-      <!-- Sort by Date in descending order -->
+      <!-- START: Sort by Date in descending order -->
       {{ range first 8 (sort .RegularPages "Date" "desc") }}
-        <div class="text-decoration-none">
-          <!-- START: Project Info -->
-          <div class="text-decoration-none">
-            <p class="text-black-70" style="margin-top: 8px; margin-bottom: 0px"><b>{{ .Title }}</b></p>
-            <p class="text-black-61" style="text-align: justify; margin-bottom: 8px">{{ .Params.pub_desc | markdownify }}</p>
+      <div class="text-decoration-none">
+        <!-- START: Recent News 박스 -->
+        <div class="text-decoration-none list-custom-pub-card-body shadow-sm p-4 pt-3 pb-3 mb-3 bg-body rounded">
+          <!-- START: 박스 내 학회 및 날짜 -->
+          <div class="col-12 d-flex justify-content-between align-items-center" style="padding-bottom: 15px;">
+            <!-- START: pub_type에 따라 분류 -->
+            {{ if eq .Params.pub_type "Paper" }}
+              <span class="text-black-70 fs-5" style="margin-top: 8px; margin-bottom: 0px;">
+                <b>{{ .Params.Pub_short_venue }}</b>
+              </span> 
+            {{ else if eq .Params.pub_type "Member" }}
+              <span class="text-black-70 fs-5" style="margin-top: 8px; margin-bottom: 0px;">
+                <b>Welcome</b>
+              </span>
+            {{ else if eq .Params.pub_type "News" }}
+              <span class="text-black-70 fs-5" style="margin-top: 8px; margin-bottom: 0px;">
+                <b>News</b>
+              </span>
+            {{ else }}
+              <span class="text-black-70 fs-5" style="margin-top: 8px; margin-bottom: 0px;">
+              </span>
+            {{ end }}
+            <!-- END: pub_type에 따라 분류 -->
+
+            <!-- START: 날짜 표시 -->
+            <span class="text-black-61" style="margin-top: 8px; margin-bottom: 0px;">
+              <b>{{ .Title }}</b>
+            </span>
+            <!-- END: 날짜 표시 -->
           </div>
-          <!-- END -->
+          <!-- END: 박스 내 학회 및 날짜 -->
+           
+          <!-- START: Recent New 박스 내부 내용 -->
+          <div>
+            {{ .Params.pub_desc | markdownify }}
+          </div>
+          <!-- END: Recent New 박스 내부 내용 -->
         </div>
+        <!-- END: Recent News 박스 -->
+      </div>
       {{ end }}
+      <!-- END: Sort by Date in descending order -->
     </div>
     <a class="btn btn-outline-primary" style="margin-top: 20px;" href="news/">See More</a>
-  </div>
 </div>
 </section>

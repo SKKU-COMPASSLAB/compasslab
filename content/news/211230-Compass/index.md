@@ -5,7 +5,8 @@ title:  "2021"  # publication title
 date: 2021-12-30
 
 params:
-
+    pub_type:
+        "News"
     pub_desc: |
         - "[Dec 2021] Mukhammed's paper has been accepted to Sensors [SCIE]. Congratulation!"
         - "[Dec 2021] Seungtae and Junhyuk's paper has been accepted to KSC2021. Congratulation!!"

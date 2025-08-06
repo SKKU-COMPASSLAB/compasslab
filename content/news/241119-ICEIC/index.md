@@ -5,8 +5,28 @@ title:  "Nov 2024"  # publication title
 date: 2024-11-19
 
 params:
-    pub_desc: |
-        Yoonho, Talha, Minjin, Wonyoung, Junbum, and Seongwook's paper have been accepted to International Conference on Electronics, Information, and Communication (ICEIC). Congratulations!
+    pub_type:
+        "Paper"
+    pub_short_venue: 
+        "ICEIC 2025" 
+    pub_tier: 
+    pub_author: 
+        - "Yoonho Jang"
+        - "Talha Ahmed"
+        - "Minjin Park"
+        - "Junbum Park"
+        - "Wonyoung Lee"
+        - "Seongwook Kim"
+    pub_title: 
+        - "Redefining PIM Architecture with Compact and Power-Efficient Microscaling"
+        - "An Experimental Study of Merkle Tree-Based Security Mechanism for Secure SSD Storages"
+        - "Evaluating Data Compression Algorithms and Their Impact on NAND Flash-Based SSDs"
+        - "Characterizing Performance Impact of DRAM Address Mapping for DDR4 and DDR5 Systems"
+        - "Performance Characterization of CXL Memory: Effectiveness of On-Device Cache"
+        - "Title"
+    pub_desc: 
+        # Yoonho, Talha, Minjin, Wonyoung, Junbum, and Seongwook's paper have been accepted to International Conference on Electronics, Information, and Communication (ICEIC). Congratulations!
+        "Yoonho, Talha, Minjin, Wonyoung, Junbum, and Seongwook's paper have been accepted to ICEIC."
     pub_details: |
         **Yoonho Jang** et al., "Redefining PIM Architecture with Compact and Power-Efficient Microscaling", 
         **Talha Ahmed** et al., "An Experimental Study of Merkle Tree-Based Security Mechanism for Secure SSD Storages",

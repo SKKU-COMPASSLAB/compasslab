@@ -5,7 +5,8 @@ title:  "2020"  # publication title
 date: 2020-12-30
 
 params:
-
+    pub_type:
+        "News"
     pub_desc: |
         - "[Sep 2020] Mukhammed Garifulla will be joining our lab as an M.S. student. Welcome to COMPASS LAB!"
         - "[Aug 2020] Beomjun's paper has been accepted for ICCD2020. Congratulation!"

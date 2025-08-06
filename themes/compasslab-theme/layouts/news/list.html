@@ -9,54 +9,67 @@
           {{ end }}
         </div>
       </div>
-      <div class="row g-4 pb-5">
-        <!-- Sort by Date in descending order -->
-        {{ $listPaginator := .Paginate (sort .RegularPages "Date" "desc") 10 }}
-        {{ range $listPaginator.Pages }}
-          <div class="text-decoration-none list-custom-pub-card-body" style="padding: 20px;">
-            <div class="row">
+      <!-- Get pages from /content/publications -->
+      {{ $publications := where .Site.RegularPages "Section" "publications" }}
+      <!-- START: Sort news by date in descending order -->
+      {{ $listPaginator := .Paginate (sort .RegularPages "Date" "desc") 10 }}
+      {{ range $listPaginator.Pages }}
+      <!-- START: News 박스 -->
+      <div class="text-decoration-none list-custom-pub-card-body shadow p-4 pb-3 mb-3 bg-body rounded">
+        <!-- START: 박스 상단 학회 및 날짜 -->
+        <div class="col-12 d-flex justify-content-between align-items-center" style="padding-bottom: 15px;">
+          <!-- START: pub_type에 따라 분류 -->
+          {{ if eq .Params.pub_type "Paper" }}
+            <span class="text-black-70 fs-5" style="margin-top: 8px; margin-bottom: 0px;">
+              <b>{{ .Params.Pub_short_venue }}</b>
+            </span> 
+          {{ else if eq .Params.pub_type "Member" }}
+            <span class="text-black-70 fs-5" style="margin-top: 8px; margin-bottom: 0px;">
+              <b>Welcome</b>
+            </span>
+          {{ else if eq .Params.pub_type "News" }}
+            <span class="text-black-70 fs-5" style="margin-top: 8px; margin-bottom: 0px;">
+              <b>News</b>
+            </span>
+          {{ else }}
+            <span class="text-black-70 fs-5" style="margin-top: 8px; margin-bottom: 0px;">
+            </span>
+          {{ end }}
+          <!-- END: pub_type에 따라 분류 -->
 
-              <!-- START: Project Thumbnail with Carousel -->
-              <div class="col-12 col-lg-4" style="margin: auto;">
-                <div id="list-carousel-{{ .File.UniqueID }}" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
-                  <!-- data-bs-interval="2000" for speed adjustment -->
-                  <div class="carousel-inner">
-                    {{ $index := 0 }}
-                    {{ range (.Resources.ByType "image") }}
-                      <div class="carousel-item {{ if eq $index 0 }}active{{ end }}">
-                        <img src="{{ .Permalink }}" class="d-block" alt="{{ $.Title }}" style="width: 100%; height: 250px; object-fit: contain;">
-                      </div>
-                      {{ $index = add $index 1 }}
-                    {{ end }}
-                  </div>
-                  <!-- Controls -->
-                  <button class="carousel-control-prev" type="button" data-bs-target="#list-carousel-{{ .File.UniqueID }}" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#list-carousel-{{ .File.UniqueID }}" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              </div>
-              <!-- END -->
+          <!-- START: 날짜 표시 -->
+          <span class="text-black-61" style="margin-top: 8px; margin-bottom: 0px;">
+            <b>{{ .Title }}</b>
+          </span>
+          <!-- END: 날짜 표시 -->
+        </div>
+        <!-- END: 박스 상단 학회 및 날짜 -->
 
-              <!-- START: Project Info -->
-              <div class="col-12 col-lg-8">
-                <div class="text-decoration-none text-black-61 custom-link">
-                  <h5 style="padding-top: 8px"><b>{{ .Title }}</b></h5>
-                  <p style="text-align: justify">{{ .Params.pub_desc | markdownify }}</p>
-                  <p style="text-align: justify">{{ .Params.pub_details | markdownify }}</p>
-                </div>
-              </div>
-              <!-- END -->
-
+        <!-- START: 논문 정보 및 링크 -->
+        <div class="row">
+          <div class="col-12">
+            <div class="text-decoration-none text-black-61 custom-link">
+              <p style="text-align: justify;">
+                <b>{{ .Params.pub_desc | markdownify }}</b>
+              </p>
+              {{ $newsVenue := .Params.pub_short_venue }}
+              {{ if $newsVenue }}
+                <!-- Publication 중 News의 논문과 같은 논문이 있는 경우 -->
+                {{ $matchingPubs := where $publications ".Params.pub_short_venue" $newsVenue }}
+                {{ range $matchingPubs }}
+                <a href="{{ .Permalink }}" class="text-decoration-none text-black-61">
+                  <li>{{ .Title }}</li>
+                </a>
+                {{ end }}
+              {{ end }}
             </div>
           </div>
-        {{ end }}
+        </div>
+        <!-- END: 논문 정보 및 링크 -->
       </div>
-
+      <!-- END: News 박스 -->
+      {{ end }}
+      <!-- END: Sort news by date in descending order -->
       <div class="row pb-3">
         {{ template "_internal/pagination.html" . }}
       </div>
