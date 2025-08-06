@@ -72,8 +72,10 @@
       <!-- START: Alumni -->
       <h3 class="fs-1 fw-bold text-center text-primary pb-3" style="margin-bottom: 40px">Alumni</h3>
       <div class="row g-4 pb-5">
+        <!-- Sort alumni according to their graduation date -->
+        {{ $sorted_members := sort $member_pages "Params.Date" "desc" }}
         {{ $cnt := 0 }}
-        {{ range $member_pages }}
+        {{ range $sorted_members }}
           {{ if eq .Params.Position "Alumni" }}
             {{ partial "utilities/members_portrait" . }}
             {{ $cnt = add $cnt 1 }}
@@ -84,7 +86,7 @@
           <h5 class="fw-semibold" style="text-align: center;"> There's no alumni! </h5>
         {{ end }}
       </div>
-      <!-- END -->
+      <!-- END: Alumni -->
 
       <!-- <div class="row pb-5">
         {{ template "_internal/pagination.html" . }}
