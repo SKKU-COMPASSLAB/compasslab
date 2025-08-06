@@ -2,7 +2,7 @@
 layout: personal_info  # FIXED! DO NOT CHANGE!
 author: Sihyung Kim   # your name
 title:  Sihyung Kim   # your name
-date:   2023-01-01
+date:   2025-08-25
 
 params:
     position:  "Alumni"    # TODO: push your position; the position should be the one between ["Principal Investigator", "PhD Course", "Master Course", "Graduate", Alumni]
