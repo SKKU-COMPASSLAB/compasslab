@@ -13,6 +13,7 @@ params:
         - "/members/seokin_hong"
 
     pub_venue: "MEMSYS '17: Proceedings of the International Symposium on Memory Systems"  # full venue name (conference and journal name)
+    pub_short_venue: "MEMSYS 2017"
 
     pub_url: https://dl.acm.org/doi/abs/10.1145/3132402.3132408  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_thumbnail: ""  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)

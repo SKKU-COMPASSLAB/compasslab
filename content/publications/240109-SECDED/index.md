@@ -15,6 +15,7 @@ params:
         - "/members/seokin_hong"
 
     pub_venue: "IEEE Transactions on Magnetics ( Volume: 60, Issue: 3, March 2024)"  # full venue name (conference and journal name)
+    pub_short_venue: "IEEE Transactions on Magnetics"
 
     pub_url: https://ieeexplore.ieee.org/abstract/document/10385055  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_thumbnail: "thumbnail.png"  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)

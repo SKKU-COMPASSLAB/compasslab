@@ -13,6 +13,7 @@ params:
         - "/members/seokin_hong"
 
     pub_venue: "Korea Software Congress(KSC) 2019"  # full venue name (conference and journal name)
+    pub_short_venue: "KSC 2019"
 
     pub_url: https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE09302062  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_thumbnail: ""  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)

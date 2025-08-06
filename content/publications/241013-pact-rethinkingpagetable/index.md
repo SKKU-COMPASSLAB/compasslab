@@ -13,6 +13,7 @@ params:
         - "/members/seokin_hong"
 
     pub_venue: "2024 International Conference on Parallel Architectures and Compilation Techniques (PACT 2024)"  # full venue name (conference and journal name)
+    pub_short_venue: "PACT 2024"
 
     pub_url: https://dl.acm.org/doi/10.1145/3656019.3676900  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_ppt: "241013-pact-rethinkingpagetable/PACT'24, FS-HPT.pptx"

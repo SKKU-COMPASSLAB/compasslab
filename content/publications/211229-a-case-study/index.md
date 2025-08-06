@@ -18,6 +18,7 @@ params:
         - "/members/seokin_hong"
 
     pub_venue: "Sensors 2022"  # full venue name (conference and journal name)
+    pub_short_venue: "Sensors 2022"
 
     pub_url: https://www.mdpi.com/1424-8220/22/1/219  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_thumbnail: "thumbnail.png"  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)

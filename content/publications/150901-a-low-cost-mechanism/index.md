@@ -13,6 +13,7 @@ params:
         - "Soontae Kim"
 
     pub_venue: "IEEE Transactions on Computers ( Volume: 64, Issue: 9, 01 September 2015)"  # full venue name (conference and journal name)
+    pub_short_venue: "IEEE TC 2015"
 
     pub_url: https://ieeexplore.ieee.org/abstract/document/6945834  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_thumbnail: ""  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)

@@ -13,6 +13,8 @@ params:
         - "/members/seokin_hong"
 
     pub_venue: "ASPLOS '19: Proceedings of the Twenty-Fourth International Conference on Architectural Support for Programming Languages and Operating Systems"  # full venue name (conference and journal name)
+    pub_short_venue: "ASPLOS 2019"
+
 
     pub_url: https://dl.acm.org/doi/abs/10.1145/3297858.3304038  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_thumbnail: ""  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)

@@ -13,6 +13,7 @@ params:
         - "/members/seokin_hong"
 
     pub_venue: "IEEE Access ( Volume:13)"  # full venue name (conference and journal name)
+    pub_short_venue: "IEEE Access"
 
     pub_url:   https://ieeexplore.ieee.org/document/10843687
     # URL to get access to the publication (comment this line if you don't have publicaiton URL)

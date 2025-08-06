@@ -16,6 +16,7 @@ params:
         - "Yunho Oh"
 
     pub_venue: "IEEE Access"  # full venue name (conference and journal name)
+    pub_short_venue: "IEEE Access"
 
     pub_url: https://ieeexplore.ieee.org/abstract/document/10477427  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_thumbnail: "thumbnail.png"  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)

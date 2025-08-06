@@ -15,6 +15,7 @@ params:
         - "Soontae Kim"
 
     pub_venue: "IEEE Transactions on Computers ( Volume: 70, Issue: 7, 01 July 2021)"  # full venue name (conference and journal name)
+    pub_short_venue: "IEEE TC 2021"
 
     pub_url: https://ieeexplore.ieee.org/abstract/document/9143415  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_thumbnail: "thumbnail.png"  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)

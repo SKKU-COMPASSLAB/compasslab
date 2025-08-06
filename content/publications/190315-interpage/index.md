@@ -15,7 +15,8 @@ params:
         - "Soontae Kim"
         - "/members/seokin_hong"
 
-    pub_venue: "MICRO '52: Proceedings of the 52nd Annual IEEE/ACM International Symposium on Microarchitecture"  # full venue name (conference and journal name)
+    pub_venue: "IEEE Transactions on Very Large Scale Integration (VLSI) Systems"  # full venue name (conference and journal name)
+    pub_short_venue: "IEEE VLSI"
 
     pub_url: https://ieeexplore.ieee.org/abstract/document/8715674  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_thumbnail: ""  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)

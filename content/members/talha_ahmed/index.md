@@ -2,7 +2,7 @@
 layout: personal_info  # FIXED! DO NOT CHANGE!
 author: Talha Ahmed   # your name
 title:  Talha Ahmed    # your name
-date:   2025-08-25
+date:   2023-03-01
 
 params:
     position:  "Alumni"  # one of ["Principal Investigator", "PhD Course", "Master Course", "Undergraduate", Alumni]
@@ -26,7 +26,7 @@ params:
     experiences:  # provide your professional experiences
         - {
             exp_from: "2023",  # start-date of this experience
-            exp_to:   "2025",      # end-date of this experience (make this field empty if you are currently going through this experience)
+            exp_to:   "",      # end-date of this experience (make this field empty if you are currently going through this experience)
             exp_desc: "Master's degree at Sungkyunkwan University"
         }
 ---

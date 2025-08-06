@@ -17,6 +17,7 @@ params:
         - "Michael Healy"
 
     pub_venue: "2018 51st Annual IEEE/ACM International Symposium on Microarchitecture (MICRO)"  # full venue name (conference and journal name)
+    pub_short_venue: "MICRO 2018"
 
     pub_url: https://ieeexplore.ieee.org/abstract/document/8574551  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_thumbnail: ""  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)

@@ -13,6 +13,7 @@ params:
         - "/members/seokin_hong"
 
     pub_venue: "2024 Design Automation Conference (DAC 2024) (Poster)"  # full venue name (conference and journal name)
+    pub_short_venue: "DAC 2024"
 
     pub_url:   # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_thumbnail: "thumbnail.png"  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)

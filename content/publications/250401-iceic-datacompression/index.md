@@ -12,6 +12,7 @@ params:
         - "/members/seokin_hong"
 
     pub_venue: " 2025 International Conference on Electronics, Information, and Communication (ICEIC)" # full venue name (conference and journal name)
+    pub_short_venue: "ICEIC 2025"
 
     # pub_url: https://ieeexplore.ieee.org/abstract/document/10477427  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     # pub_thumbnail: "thumbnail.png"  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)

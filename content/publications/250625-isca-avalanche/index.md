@@ -16,6 +16,7 @@ params:
         - "/members/seokin_hong"
 
     pub_venue: "2025 International Symposium on Computer Architecturee (ISCA 2025)"  # full venue name (conference and journal name)
+    pub_short_venue: "ISCA 2025"
 
    # pub_url: https://ieeexplore.ieee.org/abstract/document/10477427  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     # pub_ppt: #"241102-icce-asia-impact/ICCE-ASIA'24, IMPACT ON RW LATENCY.pptx"

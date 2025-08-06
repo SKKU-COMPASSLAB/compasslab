@@ -15,6 +15,7 @@ params:
         - "Soontae Kim"
 
     pub_venue: "2017 IEEE International Symposium on High Performance Computer Architecture (HPCA)"  # full venue name (conference and journal name)
+    pub_short_venue: "HPCA 2017"
 
     pub_url: https://ieeexplore.ieee.org/abstract/document/7920827  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_thumbnail: ""  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)

@@ -13,6 +13,7 @@ params:
         - "/members/seokin_hong"
 
     pub_venue: "2023 International Technical Conference on Circuits/Systems, Computers, and Communications (ITC-CSCC)"  # full venue name (conference and journal name)
+    pub_short_venue: "ITC-CSCC 2023"
 
     pub_url: https://ieeexplore.ieee.org/abstract/document/10212538  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_thumbnail: "thumbnail.png"  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)

@@ -12,6 +12,7 @@ params:
         - "/members/seokin_hong"
 
     pub_venue: "Journal of the Korea Society of Computer and Information, Volume 25 Issue 4, pp.1-9, 2020"  # full venue name (conference and journal name)
+    pub_short_venue: "KSCI 2020"
 
     pub_url: https://koreascience.kr/article/JAKO202013363975533.page  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_thumbnail: ""  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)

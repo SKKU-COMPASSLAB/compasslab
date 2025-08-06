@@ -14,6 +14,7 @@ params:
         - "/members/seokin_hong"
 
     pub_venue: "2022 IEEE International Conference on Consumer Electronics-Asia (ICCE-Asia)"  # full venue name (conference and journal name)
+    pub_short_venue: "ICCE-Asia 2022"
 
     pub_url: https://ieeexplore.ieee.org/abstract/document/9954665/  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_thumbnail: "thumbnail.png"  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)

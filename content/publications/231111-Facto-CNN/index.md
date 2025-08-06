@@ -14,6 +14,7 @@ params:
         - "/members/seokin_hong"
 
     pub_venue: "Proceedings of the 15th Asian Conference on Machine Learning (ACML)"  # full venue name (conference and journal name)
+    pub_short_venue: "ACML 2023"
 
     pub_url: https://proceedings.mlr.press/v222/lee24b.html  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_thumbnail: "thumbnail.png"  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)

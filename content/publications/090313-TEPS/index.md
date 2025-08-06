@@ -13,6 +13,7 @@ params:
         - "Soontae Kim"
 
     pub_venue: "2009 IEEE Computer Society Annual Symposium on VLSI"  # full venue name (conference and journal name)
+    pub_short_venue: "ISVLSI 2009"
 
     pub_url: https://ieeexplore.ieee.org/abstract/document/5076422  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_thumbnail: ""  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)
