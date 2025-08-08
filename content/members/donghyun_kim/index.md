@@ -13,7 +13,8 @@ params:
     profile_image: profile.jpg  # put the filename of the profile image here
  
     interests: [   # fill out your research interests
-
+        "GPU",
+        "Operating System",
     ]
  
     biography: I am an graduate student in the Department of Semiconductor Convergence Engineering. I'm interested in computer system such as computer architecture, operating system. |   # fill out your short biography... Introduce yourself!
