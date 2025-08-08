@@ -14,6 +14,7 @@ params:
  
     interests: [   # fill out your research interests
         "GPU",
+        "Memory Systems",
         "SSIT Course"
     ]
  
