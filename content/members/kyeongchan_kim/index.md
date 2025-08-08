@@ -13,7 +13,7 @@ params:
     profile_image: profile.jpg  # put the filename of the profile image here
  
     interests: [   # fill out your research interests
-        "Accelerator",
+        "GPU",
         "SSIT Course"
     ]
  
