@@ -11,7 +11,7 @@ params:
     email:     "jyh8807@skku.edu"  # TODO: school email address (if you don't want to upload your email address, comment or remove this line!)
     linkedin:  https://www.linkedin.com/in/yoonho-jang-72b990336/
     
-    profile_image: profile.jpg  # TODO: put the filename of the profile image here 
+    profile_image: yoonho_jang.jpeg  # TODO: put the filename of the profile image here 
 
     interests: [   # TODO: fill out your research interests        
         "Memory Systems",

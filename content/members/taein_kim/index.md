@@ -9,7 +9,7 @@ params:
     job_title: "Researcher"     # all of the students should specify the title of himself as a "Researcher"
     email:     "xovnd2010@skku.edu"         # school email address
     
-    profile_image: profile_KimTaein.jpg  # put the filename of the profile image here 
+    profile_image: taein_kim.jpeg  # put the filename of the profile image here 
 
     interests: [   # fill out your research interests
         "Accelerator"

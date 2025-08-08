@@ -10,7 +10,7 @@ params:
     # telephone: "+82-31-299-4915"         # phone number (if you don't want to upload your phone number, comment or remove this line!)
     email:     "cmk3071@skku.edu"         # school email address
    
-    profile_image: profile.jpg  # put the filename of the profile image here
+    profile_image: minkyu_choi.png  # put the filename of the profile image here
  
     interests: [   # fill out your research interests
         "Memory Systems",
