@@ -10,7 +10,7 @@ params:
     telephone: "+82-31-299-4658"  # TODO: phone number (if you don't want to upload your phone number, comment or remove this line!)
     email:     "osang915@skku.edu"  # TODO: school email address (if you don't want to upload your email address, comment or remove this line!)
    
-    profile_image: osang_profile.png  # TODO: put the filename of the profile image here
+    profile_image: osang_kwon.png  # TODO: put the filename of the profile image here
  
     interests: [   # TODO: fill out your research interests
         "Computer Architecture",
