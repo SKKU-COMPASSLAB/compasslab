@@ -2,7 +2,7 @@
 layout: personal_info  # FIXED! DO NOT CHANGE!
 author: Talha Ahmed   # your name
 title:  Talha Ahmed    # your name
-date:   2023-03-01
+date:   2025-03-01
 
 params:
     position:  "Alumni"  # one of ["Principal Investigator", "PhD Course", "Master Course", "Undergraduate", Alumni]
