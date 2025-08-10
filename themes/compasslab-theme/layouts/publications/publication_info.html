@@ -72,11 +72,16 @@
           <!-- END -->
 
           <!-- START: Abstract -->
-          <div class="pb-3">
+          <!-- <div class="pb-3">
             <p class="text-black-61 fs-4 fw-semibold">Abstract</p>
             <p class="text-black-61 fs-7" style="text-align: justify">{{ .Params.Pub_abstract }}</p>
-          </div>
+          </div> -->
           <!-- END -->
+
+          <!-- MarkDown Body 글 작성 테마 지정-->
+          <div class="latex-font fs-5 lh-lg mx-auto" style="max-width: 800px;">
+            {{ .Content }}
+          </div>
 
           <!-- START: Keywords -->
           <div class="pb-3">
