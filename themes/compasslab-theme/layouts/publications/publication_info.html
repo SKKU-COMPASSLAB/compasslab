@@ -77,8 +77,37 @@
             <p class="text-black-61 fs-7" style="text-align: justify">{{ .Params.Pub_abstract }}</p>
           </div> -->
           <!-- END -->
+          
+          <!-- Publication Card Display -->
+          <!-- {{ with .Resources.GetMatch "card.jpg" }}
+            <div class="container my-4">
+              <div class="row justify-content-center">
+                <div class="col-12 col-sm-14 col-md-12 col-lg-10 col-xl-8">
+                  <img
+                    src="{{ .RelPermalink }}"
+                    alt="Card image"
+                    class="img-fluid d-block mx-auto"
+                  >
+                </div>
+              </div>
+            </div>
+          {{ end }} -->
+          {{ with .Resources.GetMatch "card.jpg" }}
+            <div class="container-fluid my-4 p-0">
+              <div class="row justify-content-center mx-0">
+                <div class="col-12 col-md-9 col-lg-9 p-0">
+                  <img
+                    src="{{ .RelPermalink }}"
+                    alt="Card image"
+                    class="img-fluid"
+                    style="height: auto;"
+                  >
+                </div>
+              </div>
+            </div>
+          {{ end }}
 
-          <!-- MarkDown Body 글 작성 테마 지정-->
+          <!-- Article Display -->
           <div class="latex-font fs-5 lh-lg mx-auto" style="max-width: 800px;">
             {{ .Content }}
           </div>
