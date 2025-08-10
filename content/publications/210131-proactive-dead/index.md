@@ -38,3 +38,5 @@ params:
     #   - NDP : Near Data Processing / Processing In Memory
     pub_class: "MS"  # choose any class of the publication
 ---
+## Abstract
+Spin Transfer Torque Magnetic Random Access Memory (STT-MRAM) is a promising emerging memory technology for the on-chip caches. It has low read access time and low leakage power. Unfortunately, however, STT-MRAM suffers from its long write latency. This paper proposes a cache management mechanism that evicts the dead-blocks in advance to enable fast writes in the STT-MRAM-based caches. Experimental evaluation shows that the proposed mechanism improves the performance by 7%, on average, compared to a baseline STT-MRAM cache.

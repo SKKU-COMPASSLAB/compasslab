@@ -41,3 +41,5 @@ params:
     pub_class: "ACC"  # choose any class of the publication
     pub_tier: "SCIE"
 ---
+## Abstract
+Recently, the amount of attention paid towards convolutional neural networks (CNN) in medical image analysis has rapidly increased since they can analyze and classify images faster and more accurately than human abilities. As a result, CNNs are becoming more popular and play a role as a supplementary assistant for healthcare professionals. Using the CNN on portable medical devices can enable a handy and accurate disease diagnosis. Unfortunately, however, the CNNs require high-performance computing resources as they involve a significant amount of computation to process big data. Thus, they are limited to being used on portable medical devices with limited computing resources. This paper discusses the network quantization techniques that reduce the size of CNN models and enable fast CNN inference with an energy-efficient CNN accelerator integrated into recent mobile processors. With extensive experiments, we show that the quantization technique reduces inference time by 97% on the mobile system integrating a CNN acceleration engine.

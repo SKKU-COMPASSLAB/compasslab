@@ -36,3 +36,5 @@ params:
     #   - NDP : Near Data Processing / Processing In Memory
     pub_class: "MS"  # choose any class of the publication
 ---
+## Abstract
+In this paper, we propose an efficient adaptive write scheme that improves the performance of write operation in MLC STT-MRAM caches. The key idea of the proposed scheme is to perform the write operation fast if the target MLC STT-MRAM cells contain a dead block. Even if the fast write operation on the MLC STT-MRAM evicts a cache block from the MLC STT-MRAM cells, its performance impact is low if the evicted block is a dead block which is not used in the future. Through experimental evaluation with a memory simulator, we show that the proposed adaptive write scheme improves the performance of the MLC STT-MRAM caches by 17% on average.

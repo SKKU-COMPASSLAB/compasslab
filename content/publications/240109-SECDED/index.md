@@ -38,3 +38,5 @@ params:
     pub_class: "MS"  # choose any class of the publication
     pub_tier: "SCIE"
 ---
+## Abstract
+Racetrack memory (RM), a highly dense and high-speed spintronic non-volatile memory (NVM) technology, has the potential to revolutionize data storage. However, its reliability is often compromised by shift errors that occur during data transfer. To mitigate these errors, system architects often employ error-correcting codes (ECCs) such as single-error correction and double-error detection (SECDED) codes. However, these codes have very limited capabilities when it comes to dealing with double errors, leaving room for improvement in error correction capabilities. In this article, we introduce an enhanced positional SECDED (EP-SECDED) that significantly improves the double-error correction capabilities. Our simulation results demonstrate a two-deletion correction percentage of 19.1% for a 26-bit message, which is a 3.3× improvement over the current state-of-the-art SECDED code. Importantly, our scheme does not incur any additional hardware complexity or cost in terms of redundancy. EP-SECDED offers a low-cost solution for improving the reliability of RM.

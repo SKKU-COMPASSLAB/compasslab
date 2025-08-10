@@ -45,3 +45,5 @@ params:
     #   - NDP : Near Data Processing / Processing In Memory
     pub_class: "NDP"  # choose any class of the publication
 ---
+## Abstract
+Convolutional Neural Networks (CNN) demand high computational capabilities, motivating researchers to leverage Processing-In-Memory (PIM) technology to achieve significant performance improvements. However, implementing complex arithmetic operations such as multiplication within memory is a significant challenge in the PIM architecture. To address this challenge, this paper proposes a PIM-enabled cache (PEC) architecture that utilizes shifters for performing multiplication operations at a low cost. We also introduce a filter-wise hardware-friendly Power-of-Two (POT) quantization scheme that quantizes weights into power-of-two values for specific filters to accelerate convolution operations with the PEC. Our experimental results demonstrate that the proposed PEC, together with the POT quantization, achieves 2.28x performance improvement on average with an accuracy degradation of 0.784%.

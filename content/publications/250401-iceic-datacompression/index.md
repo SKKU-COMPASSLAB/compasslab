@@ -34,3 +34,5 @@ params:
     #   - NDP : Near Data Processing / Processing In Memory
     pub_class: "MS"  # choose any class of the publication
 ---
+## Abstract
+Modern NAND Flash-based SSDs have become a cornerstone of modern data storage solutions due to their speed and efficiency. With the increasing demand for large-scale datasets to train deep learning models, the need for greater storage capacity is also on the rise. Utilizing data compression techniques helps efficiently manage storage to meet the growing demand for storage capacity. In this paper, we discuss the advantages of compressing user data from the perspectives of endurance, reliability, and storage capacity in NAND Flash Memory. We also provide experimental analysis on various compression algorithms which can be applied to NAND Flash-based SSDs.

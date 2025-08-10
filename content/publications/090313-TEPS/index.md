@@ -45,3 +45,5 @@ params:
     #   - NDP : Near Data Processing / Processing In Memory
     pub_class: "CA"  # choose any class of the publication
 ---
+## Abstract
+Future microprocessors are expected to observe higher transient error rates in combinational logic due to technology scaling and dense integration. We propose a simple transient error protection mechanism for embedded systems exploiting frequent small operand values of instructions and frequently used shift operations. The conditions for applicable instructions for the proposed mechanism are explored, which account for 84% of total instructions executed on average. The operands of these instructions are replicated in ALU directly and other instructions are protected using time-redundant double execution. Our experimental results show that the proposed mechanism incurs 12% performance hit and 4% energy hit, on average, with a low impact on the chip area (7% of the execution unit area).

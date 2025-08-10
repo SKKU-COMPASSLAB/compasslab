@@ -42,3 +42,5 @@ params:
     pub_class: "MS"  # choose any class of the publication
     pub_tier: "Major"
 ---
+## Abstract
+Conventional cache tag matching is based on addresses to identify correct data in caches. However, this tagging scheme is not efficient because tag bits are unnecessarily large. From our observations, there are not many unique tag bits due to typically small working sets, which are conventionally captured by TLBs. To effectively exploit this fact, we propose TLB index-based cache tagging scheme. This new tagging scheme reduces required number of tag bits to one-fourth of the conventional tagging scheme. The reduced tag bits decrease tag bits array area by 72% and its energy consumption by 58%. From our experiments, our proposed new tagging scheme reduces instruction cache energy consumption by 13% for embedded systems.

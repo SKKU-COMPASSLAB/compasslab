@@ -37,3 +37,5 @@ params:
     pub_class: "MS"  # choose any class of the publication
     pub_tier: "Top-tier"
 ---
+## Abstract
+Among the various NVM technologies, phase-change-memory (PCM) has attracted substantial attention as a candidate to replace the DRAM for next-generation memory. However, the characteristics of PCM cause it to have much longer read and write latencies than DRAM. This paper proposes a Write-Around PCM System that addresses this limitation using two novel schemes: Pseudo-Row Activation and Direct Write. Pseudo-Row Activation provides fast row activation for PCM writes by connecting a target row to bitlines, but it does not fetch the data into the row buffer. With the Direct Write scheme, our system allows for writing operations to update the data even if the target row is in the logically closed state.

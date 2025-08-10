@@ -38,3 +38,5 @@ params:
     #   - NDP : Near Data Processing / Processing In Memory
     pub_class: "MS"  # choose any class of the publication
 ---
+## Abstract
+DNN inference on mobile and edge devices is challenging due to high computational and storage demands. To accelerate the inference on these devices, various DNN accelerators have been proposed. In these accelerators, the on-chip buffers occupy a significant portion of the chip area because they need to be large enough to minimize the off-chip memory accesses and usually implemented with SRAM cells. This paper presents a DNN accelerator that utilizes Spin-Transfer Torque RAM (STTRAM) to build large buffers with a low area budget. By exploiting the access patterns of activations and weights in DNN inference, we optimize the STT-RAM to have short write latency and low write power. Experimental results show that the buffers implemented with optimized STT-RAM significantly boost the performance and energy efficiency of the DNN accelerators.
