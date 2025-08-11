@@ -10,7 +10,7 @@ params:
  #   telephone: ""         # phone number (if you don't want to upload your phone number, comment or remove this line!)
     email:     "henrly2@skku.edu"         # school email address
     
-    profile_image: profile.png  # put the filename of the profile image here 
+    profile_image: joonseong_hwang.png  # put the filename of the profile image here 
 
     interests: [   # fill out your research interests
         "Storage",
