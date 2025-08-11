@@ -1,7 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap");
+.article-font {
+  // font-family: serif;
+  // font-family: 'Lora', serif;
+  // font-family: 'PT Serif', serif;
+  // font-family: 'Open Sans', sans-serif;
+  // font-family: 'Noto Sans', sans-serif;
+  // font-family: 'Playfair Display', serif;
+  font-family: 'IBM Plex Sans', sans-serif;
 
-.latex-font {
-  font-family: 'Crimson Pro', serif;
+  
+  
+
+
   font-size: 1.125rem;
   line-height: 1.8;
   color: #111;
@@ -9,22 +18,37 @@
   letter-spacing: 0.01em;
 }
 
-.latex-font h1, .latex-font h2, .latex-font h3 {
+.article-font h1 {
   font-weight: bold;
+  font-size: 1.8rem;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
 }
 
-.latex-font p {
+.article-font h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 1.4em;
+  margin-bottom: 0.5em;
+}
+
+.article-font h3 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 1.3em;
+  margin-bottom: 0.5em;
+}
+
+.article-font p {
   font-size: 1.05rem;
   margin-bottom: 1em;
 }
 
-.latex-font ul, .latex-font ol {
+.article-font ul, .article-font ol {
   padding-left: 1.5em;
 }
 
-.latex-font blockquote {
+.article-font blockquote {
   font-style: italic;
   border-left: 3px solid #ccc;
   padding-left: 1em;

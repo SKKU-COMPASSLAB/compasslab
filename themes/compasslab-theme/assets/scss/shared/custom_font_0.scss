@@ -1,0 +1,34 @@
+// 구글 폰트 임포트
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;700&display=swap");
+
+// 변수 지정
+$article-font: 'IBM Plex Serif', serif;
+$code-font: 'Source Code Pro', monospace; // 필요하면 다른 코드 폰트로 변경 가능
+
+// article-font 클래스
+.article-font {
+  font-family: $article-font;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #111;
+  letter-spacing: 0.01em;
+  text-align: justify;
+
+  h1, h2, h3, h4, h5 {
+    font-weight: 700;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  code {
+    font-family: $code-font;
+    font-size: 0.9em;
+    background-color: #f7f7f7;
+    padding: 0.15em 0.3em;
+    border-radius: 4px;
+  }
+}
