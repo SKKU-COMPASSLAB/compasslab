@@ -37,7 +37,7 @@ params:
     pub_tier: "Top-tier"
 ---
 
-## SoftWalker: Supporting Software Page Table Walk for Irregular GPU Applications
+# SoftWalker: Supporting Software Page Table Walk for Irregular GPU Applications
 
 Modern GPUs are the powerful engines behind today's most demanding applications, from AI and scientific computing to stunning graphics. But as these applications become more complex, with irregular data access patterns, GPUs are hitting a critical traffic jam in their memory systems. This bottleneck, known as address translation, can cause the entire GPU to stall.
 
