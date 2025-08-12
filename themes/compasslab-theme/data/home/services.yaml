@@ -11,7 +11,7 @@ content:
       # text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       features: [
         "CPU/GPU/NPU/DPU Architectures",
-        "Architectreal Support for Security",
+        "Architectural Support for Security",
         "Fault-tolerant Architectures"
       ]
 
