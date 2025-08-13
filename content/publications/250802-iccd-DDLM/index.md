@@ -21,7 +21,7 @@ params:
 
     pub_keywords:  # keywords of your publication
         - Compute Express Link (CXL)
-        - Memory
+        - Memory System
 
     # Publication Classes: choose one of the class specified below (see more details at "config.yaml")
     #   - ACC : Accelerator
