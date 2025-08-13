@@ -10,7 +10,7 @@ params:
     # telephone: ""  # TODO: phone number (if you don't want to upload your phone number, comment or remove this line!)
     email:    "ppmjj2000@skku.edu"  # TODO: school email address (if you don't want to upload your email address, comment or remove this line!)
     
-    profile_image: profile.jpg  # TODO: put the filename of the profile image here 
+    profile_image: minjin_park.jpeg  # TODO: put the filename of the profile image here 
 
     interests: [   # TODO: fill out your research interests
         "Computer Architecture", 
