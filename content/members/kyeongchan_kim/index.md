@@ -8,9 +8,9 @@ params:
     position:  "Master Course"  # one of ["Principal Investigator", "PhD Course", "Master Course", "Undergraduate", Alumni]
     job_title: "Researcher"     # all of the students should specify the title of himself as a "Researcher"
     # telephone: "+82-31-299-4915"         # phone number (if you don't want to upload your phone number, comment or remove this line!)
-    email:     ""         # school email address
+    email:     "jac07171@skku.edu"         # school email address
    
-    profile_image: profile.jpg  # put the filename of the profile image here
+    profile_image: kyeongchan_kim.jpeg  # put the filename of the profile image here
  
     interests: [   # fill out your research interests
         "GPU",
@@ -27,13 +27,13 @@ params:
  
     experiences:  # provide your professional experiences
         - {
-            exp_from: "2019",  # start-date of this experience
-            exp_to:   "2025",      # end-date of this experience (make this field empty if you are currently going through this experience)
-            exp_desc: "Bachelor's degree in SKKU(Sungkyunkwan University)"
-        }
-        - {
             exp_from: "2025",  # start-date of this experience
             exp_to:   "",      # end-date of this experience (make this field empty if you are currently going through this experience)
             exp_desc: "Master's degree in SKKU(Sungyunkwan University)"
+        }
+        - {
+            exp_from: "2019",  # start-date of this experience
+            exp_to:   "2025",      # end-date of this experience (make this field empty if you are currently going through this experience)
+            exp_desc: "Bachelor's degree in SKKU(Sungkyunkwan University)"
         }
 ---
