@@ -1,7 +1,7 @@
 ---
 layout: publication_info  # FIXED! DO NOT CHANGE!
 author: "Osang Kwon"   # your name (do not specify the publication authors, please specify publication authors at "pub_authors")
-title:  "Buddy ECC in CXL Memory System: Enhancing Error Protection through Bandwidth Optimization"  # publication title
+title:  "Buddy ECC: Making Cache Mostly Clean in CXL-Based Memory Systems for Enhanced Error Correction at Low Cost"  # publication title
 date:   2025-03-31  # publication date (not the blog posting date...)
     
 params:
