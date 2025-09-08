@@ -8,7 +8,7 @@ params:
     pub_type: 
         "Member"
     pub_desc: |
-        Donghyun Kim, Jungmin Lee, Juyoung Seok, Kyeongchan Kim and  have joined our lab. 
+        Donghyun Kim, Jungmin Lee, Juyoung Seok and Kyeongchan Kim have joined our lab. 
     pub_details: |
         Welcome!
 
