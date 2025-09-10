@@ -1,7 +1,7 @@
 ---
 layout: subject_info  # FIXED! DO NOT CHANGE!
 author: "COMPASSLAB"
-title:  "Sep 2025"  # publication title
+title:  "Feb 2025"  # publication title
 date: 2025-02-10
 
 params:
