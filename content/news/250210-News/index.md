@@ -8,7 +8,7 @@ params:
     pub_type:
         "News"
     pub_desc: |
-        Junhyuk Park and Sungbin Jang have received the Research Excellence Award for their master's program.
+        Junhyuk Park and Sungbin Jang have received the Grand Prize and the Excellence Award, respectively, for their outstanding work in the master's program
     pub_details: |
         Congratulation!
 
