@@ -8,7 +8,7 @@ params:
     pub_type:
         "Member"
     pub_desc: |
-        Kiwoong Kim joined our lab. 
+        Kiwoong Kim and Jinho Chang joined our lab. 
     pub_details: |
         Welcome!
 
