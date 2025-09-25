@@ -9,6 +9,7 @@ params:
     job_title: "Researcher"       # TODO: all of the students should specify the title of himself as a "Researcher"
     telephone: "+82-10-5190-7555"  # TODO: phone number (if you don't want to upload your phone number, comment or remove this line!)
     email:     "cho0624ck@skku.edu"  # TODO: school email address (if you don't want to upload your email address, comment or remove this line!)
+    blog:       "https://hj-leonardo-cho.github.io/"
     
     profile_image: hyeongjun_cho.jpg  # TODO: put the filename of the profile image here 
 
