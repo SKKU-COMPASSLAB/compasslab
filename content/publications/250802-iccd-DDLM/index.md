@@ -7,7 +7,7 @@ date:   2025-08-02  # publication date (not the blog posting date...)
 params:
     pub_authors:  # publication authors
         - "/members/taejeong_kim"
-        - "/members/junhyeok_park"
+        - "/members/junbum_park"
         - "/members/yongho_lee"
         - "/members/seokin_hong"
 
