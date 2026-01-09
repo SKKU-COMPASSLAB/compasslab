@@ -14,7 +14,7 @@ params:
         - "/members/seokin_hong"
 
 
-    pub_venue: 2026 Design, Automation and Test in Europe Conference (DATE 2026)"  # full venue name (conference and journal name)
+    pub_venue: 2026 Design, Automation and Test in Europe Conference (DATE 2026)  # full venue name (conference and journal name)
     pub_short_venue: "DATE 2026"
 
     # pub_url: https://dl.acm.org/doi/10.1145/3656019.3676900  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
