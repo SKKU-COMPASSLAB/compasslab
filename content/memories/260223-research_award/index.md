@@ -1,7 +1,7 @@
 ---
 layout: memories-info  # FIXED! DO NOT CHANGE!
 author: "Sangkyu Park"   # your name
-title:  "2026 Research Excellence Award"  # publication title
+title:  "2026 Research Award"  # publication title
 date:   2026-02-23  # date
 
 params:
@@ -12,4 +12,4 @@ params:
 
 ### 2026 Research Excellence Award
 
-Jihun Yoon and Hyeongjun Cho have received the Research Excellence Award for his master’s programs.
+Jihun Yoon and Hyeongjun Cho have received the "Research Grand Prize" and "Research Excellence Award" for his master’s programs. Congratulations!

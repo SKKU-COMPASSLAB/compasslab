@@ -18,6 +18,8 @@ params:
     ]
  
     biography: |   # fill out your short biography... Introduce yourself!
+        I am master course student in the Department of Semiconductor and Display Engineering at Sungkyunkwan University (SKKU). My research focusses on Design of Artificial Intelligence Accelerator.
+ 
         
     enable_sections:
         enable_experiences:   true  # enable "Professional Experience" section

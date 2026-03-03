@@ -13,14 +13,15 @@ params:
     profile_image: profile.jpg  # TODO: put the filename of the profile image here 
 
     interests: [   # TODO: fill out your research interests
-        "GPU"
+        "GPU",
+        "Memory Systems"
     ]
 
-    #biography: |   # TODO: fill out your short biography... Introduce yourself! (if you don't want to upload your biography, comment or remove this whole section!)
-    #    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    biography: |   # TODO: fill out your short biography... Introduce yourself! (if you don't want to upload your biography, comment or remove this whole section!)
+       I am majoring in Electrical and Computer Enginnering as Master's degree student at Sungkyunkwan University. And my research interests include general-purpose graphics processing architecture.
 
     enable_sections:  # TODO: this section checks whether to show "Experiences", "Awards and Honors", "Activities" (publications will automatically be added to your page)
-        enable_experiences:   false  # enable "Professional Experience" section
+        enable_experiences:   true  # enable "Professional Experience" section
         enable_awards_honors: false  # enable "Awards & Honors" section
         enable_activities:    false  # enable "Professional Activities" section
 
@@ -29,14 +30,14 @@ params:
 
     experiences:  # provide your professional experiences
         - {
-            exp_from: "2021",  # start-date of this experience
-            exp_to:   "",      # end-date of this experience (make this field empty if you are currently going through this experience)
-            exp_desc: "Assistant Professor at Sungkyunkwan University"
+            exp_from: "2018",  # start-date of this experience
+            exp_to:   "2024",      # end-date of this experience (make this field empty if you are currently going through this experience)
+            exp_desc: "Bachelor's degree at Sungkyunkwan University"
         }
         - {
-            exp_from: "2018",
-            exp_to:   "2021",
-            exp_desc: "Assistant Professor at Kyungpook National University"
+            exp_from: "2024",
+            exp_to:   "",
+            exp_desc: "Master's degree at Sungkyunkwan University"
         }
 
     awards_honor:  # provide the list of awards that you won

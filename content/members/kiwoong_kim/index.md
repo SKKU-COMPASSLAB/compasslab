@@ -18,7 +18,7 @@ params:
     ]
  
     biography: |   # fill out your short biography... Introduce yourself!
-        I am a student majoring in Electrical and Computer Engineering. My current research interest is in AI accelerators.
+        I am a master course student majoring in Electrical and Computer Engineering. My current research interest is in AI accelerators.
         
     enable_sections:
         enable_experiences:   true  # enable "Professional Experience" section
@@ -28,7 +28,12 @@ params:
     experiences:  # provide your professional experiences
         - {
             exp_from: "2022",  # start-date of this experience
-            exp_to:   "",      # end-date of this experience (make this field empty if you are currently going through this experience)
+            exp_to:   "2026",      # end-date of this experience (make this field empty if you are currently going through this experience)
             exp_desc: "Bachelor's degree in SKKU(Sungkyunkwan University)"
+        }
+        - {
+            exp_from: "2026",  # start-date of this experience
+            exp_to:   "",      # end-date of this experience (make this field empty if you are currently going through this experience)
+            exp_desc: "Master's degree in SKKU(Sungyunkwan University)"
         }
 ---

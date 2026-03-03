@@ -19,6 +19,7 @@ params:
     ]
  
     biography: |   # fill out your short biography... Introduce yourself!
+        I am master course student in the Department of Semiconductor Convergence Engineering at Sungkyunkwan University (SKKU). My research focusses on processor architecture and hardware/software co-design.
         
     enable_sections:
         enable_experiences:   true  # enable "Professional Experience" section
@@ -28,7 +29,12 @@ params:
     experiences:  # provide your professional experiences
         - {
             exp_from: "2020",  # start-date of this experience
-            exp_to:   "",      # end-date of this experience (make this field empty if you are currently going through this experience)
+            exp_to:   "2026",      # end-date of this experience (make this field empty if you are currently going through this experience)
             exp_desc: "Bachelor's degree in SKKU(Sungkyunkwan University)"
+        }
+        - {
+            exp_from: "2026",  # start-date of this experience
+            exp_to:   "",      # end-date of this experience (make this field empty if you are currently going through this experience)
+            exp_desc: "Master's degree in SKKU(Sungyunkwan University)"
         }
 ---
