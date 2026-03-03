@@ -5,7 +5,7 @@ title:  Wonjae Lee    # your name
 date:   2025-12-22
 
 params:
-    position:  "Undergraduate"  # one of ["Principal Investigator", "PhD Course", "Master Course", "Undergraduate", Alumni]
+    position:  "Master Course"  # one of ["Principal Investigator", "PhD Course", "Master Course", "Undergraduate", Alumni]
     job_title: "Researcher"     # all of the students should specify the title of himself as a "Researcher"
     email:     "wjyj0223@g.skku.edu"         # school email address
     

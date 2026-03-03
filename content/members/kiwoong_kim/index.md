@@ -5,7 +5,7 @@ title:  Kiwoong Kim    # your name
 date:   2025-09-01
  
 params:
-    position:  "Undergraduate"  # one of ["Principal Investigator", "PhD Course", "Master Course", "Undergraduate", Alumni]
+    position:  "Master Course"  # one of ["Principal Investigator", "PhD Course", "Master Course", "Undergraduate", Alumni]
     job_title: "Researcher"     # all of the students should specify the title of himself as a "Researcher"
     # telephone: "+82-31-299-4915"         # phone number (if you don't want to upload your phone number, comment or remove this line!)
     email:     "kwkim02@g.skku.edu"         # school email address

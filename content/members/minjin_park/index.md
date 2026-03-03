@@ -2,10 +2,10 @@
 layout: personal_info  # FIXED! DO NOT CHANGE!
 author: Minjin Park   # your name
 title:  Minjin Park   # your name
-date:   2024-01-01
+date:   2026-02-25
 
 params:
-    position: "Master Course"    # TODO: push your position; the position should be the one between ["Principal Investigator", "PhD Course", "Master Course", "Graduate", Alumni]
+    position: "Alumni"    # TODO: push your position; the position should be the one between ["Principal Investigator", "PhD Course", "Master Course", "Graduate", Alumni]
     job_title: "Researcher"       # TODO: all of the students should specify the title of himself as a "Researcher"
     # telephone: ""  # TODO: phone number (if you don't want to upload your phone number, comment or remove this line!)
     email:    "ppmjj2000@skku.edu"  # TODO: school email address (if you don't want to upload your email address, comment or remove this line!)
