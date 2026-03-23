@@ -12,13 +12,15 @@ params:
     profile_image: bumhee_lee.jpg  # put the filename of the profile image here 
 
     interests: [   # fill out your research interests
+        "SSIT Course",
         "Memory Systems",
         "Vertical Optimization",
         "Flash Storage"
     ]
 
     biography: |   # fill out your short biography... Introduce yourself!
-        I am a combined MS/PhD student in the Department of Semiconductor Systems Engineering at Sungkyunkwan University (SKKU) through the SSIT program. My research interests include memory systems, vertical optimization, and flash storage. Prior to joining SKKU, I worked as an SSD FTL developer in the Software Development Team at Samsung Electronics.
+        I have been with Samsung Electronics as an SSD FTL developer in the Software Development Team since 2019. I am a combined MS/PhD student in the Department of Semiconductor Systems Engineering at Sungkyunkwan University (SKKU) through the SSIT program. My research interests include memory systems, vertical optimization, and flash storage.
+        
 
     enable_sections:
         enable_experiences:   true  # enable "Professional Experience" section
@@ -27,9 +29,9 @@ params:
 
     experiences:  # provide your professional experiences
         - {
-            exp_from: "2026",  # start-date of this experience
-            exp_to:   "",      # end-date of this experience (make this field empty if you are currently going through this experience)
-            exp_desc: "Combined MS/PhD Student at Sungkyunkwan University"
+            exp_from: "2019",
+            exp_to:   "2026",
+            exp_desc: "Staff Engineer at Samsung Electronics"
         }
         - {
             exp_from: "2026",
@@ -37,8 +39,10 @@ params:
             exp_desc: "Principal Engineer at Samsung Electronics"
         }
         - {
-            exp_from: "2019",
-            exp_to:   "2026",
-            exp_desc: "Staff Engineer at Samsung Electronics"
+            exp_from: "2026",  # start-date of this experience
+            exp_to:   "",      # end-date of this experience (make this field empty if you are currently going through this experience)
+            exp_desc: "Combined MS/PhD Student at Sungkyunkwan University"
         }
+        
+        
 ---

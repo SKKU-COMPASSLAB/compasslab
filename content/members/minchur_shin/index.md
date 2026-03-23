@@ -12,12 +12,13 @@ params:
     profile_image: minchur_shin.jpg  # put the filename of the profile image here 
 
     interests: [   # fill out your research interests
+        "SSIT Course",
         "Computer Architecture", 
         "Memory Systems"
     ]
 
     biography: |   # fill out your short biography... Introduce yourself!
-        Dram design Engineer
+        I have been with Samsung Electronics as a DRAM design engineer in the Memory Division since 2013. I am a Master's student in the Department of Semiconductor Systems Engineering at Sungkyunkwan University (SKKU) through the SSIT program. My research interests include computer architecture and memory systems.
 
     enable_sections:
         enable_experiences:   true  # enable "Professional Experience" section
@@ -29,5 +30,10 @@ params:
             exp_from: "2013",  # start-date of this experience
             exp_to:   "",      # end-date of this experience (make this field empty if you are currently going through this experience)
             exp_desc: "Staff Engineer at Samsung Electronics"
+        }
+        - {
+            exp_from: "2026",  # start-date of this experience
+            exp_to:   "",      # end-date of this experience (make this field empty if you are currently going through this experience)
+            exp_desc: "Master's degree in Sungkyunkwan University"
         }
 ---

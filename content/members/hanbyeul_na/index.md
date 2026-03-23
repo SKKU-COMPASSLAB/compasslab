@@ -12,10 +12,10 @@ params:
     profile_image: profile.png  # put the filename of the profile image here 
 
     interests: [   # fill out your research interests
+        "SSIT Course",
         "Computer Architecture", 
         "Memory Systems",
-        "Applications of Storage",
-        "SSIT Course"
+        "Applications of Storage"
     ]
 
     biography: |   # fill out your short biography... Introduce yourself!
