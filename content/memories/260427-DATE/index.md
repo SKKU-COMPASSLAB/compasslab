@@ -12,6 +12,7 @@ params:
         - "gallery/image4.jpg"  # first image will automatically be considered as a thumbnail
         - "gallery/image5.jpg"  # first image will automatically be considered as a thumbnail
         - "gallery/image6.jpg"  # first image will automatically be considered as a thumbnail
+        - "gallery/image7.jpg"  # first image will automatically be considered as a thumbnail
 ---
 
 ### We are invited to DATE'26!
