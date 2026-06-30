@@ -9,13 +9,14 @@ params:
     job_title: "Researcher"     # all of the students should specify the title of himself as a "Researcher"
     # telephone: "+82-31-299-4915"         # phone number (if you don't want to upload your phone number, comment or remove this line!)
     email:     "wlsh2001@g.skku.edu"         # school email address
-   
+    linkedin:  https://www.linkedin.com/in/chatjinpt
+  
     profile_image: jinho_chang.jpg  # put the filename of the profile image here
  
     interests: [   # fill out your research interests
         "Computer Architecture",
-        "Heterogeneous System",
-        "Chiplet"
+        "HW/SW Co-design",
+        "Design Space Exploration"
     ]
  
     biography: |   # fill out your short biography... Introduce yourself!
