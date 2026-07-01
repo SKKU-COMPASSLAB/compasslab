@@ -15,6 +15,7 @@ params:
         - "gallery/image7.jpg"  # first image will automatically be considered as a thumbnail
         - "gallery/image8.jpg"  # first image will automatically be considered as a thumbnail
         - "gallery/image9.jpg"  # first image will automatically be considered as a thumbnail
+        - "gallery/image10.jpg"  # first image will automatically be considered as a thumbnail
 ---
 
 ### 2026 Workcation in JEJU
