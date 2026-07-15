@@ -1,7 +1,7 @@
 ---
 layout: publication_info  # FIXED! DO NOT CHANGE!
 author: "Osang Kwon"   # your name (do not specify the publication authors, please specify publication authors at "pub_authors")
-title:  "Don't Get Stuck in Traffic — A Case for Contention-Aware Translation Offloading"  # publication title
+title:  "Don't Get Stuck in Traffic: A Case for Contention-Aware Translation Offloading"  # publication title
 date:   2026-07-08  # publication date (not the blog posting date...)
     
 params:
@@ -35,7 +35,7 @@ params:
     pub_tier: "Top-tier"
 ---
 
-# Don't Get Stuck in Traffic — A Case for Contention-Aware Translation Offloading
+# Don't Get Stuck in Traffic: A Case for Contention-Aware Translation Offloading
 
 CXL-attached memory (CMM) is becoming the standard way to scale memory capacity beyond the limits of DDR channels. But in these two-tier systems, page table walks are still hard-wired to take the same road every single time — and that road is often the most congested one.
 
