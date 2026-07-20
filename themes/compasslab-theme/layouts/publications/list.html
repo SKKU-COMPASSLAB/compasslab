@@ -173,7 +173,11 @@
                   {{- $isCofirst := in $cofirst $origKey }}
                   <li style="display:inline-block;">
                     <p class="conf-text fs-8" style="margin:0;padding:0;padding-right:10px;">
-                      {{ $name }}{{ if $isCofirst }}*{{ end }}
+                      {{- with $page -}}
+                        <a class="text-black-61 text-decoration-none custom-link" href="{{ .RelPermalink }}">{{ $name }}{{ if $isCofirst }}*{{ end }}</a>
+                      {{- else -}}
+                        {{ $name }}{{ if $isCofirst }}*{{ end }}
+                      {{- end -}}
                     </p>
                   </li>
                 {{- end }}

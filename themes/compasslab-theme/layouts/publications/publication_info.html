@@ -8,7 +8,7 @@
       </div>
 
       <div class="row justify-content-center pb-5">
-        <div>
+        <div class="col-12">
           <!-- START: Publication title -->
           <div class="pb-3" style="padding-top: 30px; vertical-align: middle; text-align: center">
             
@@ -22,7 +22,7 @@
             -->
 
             {{ with .Title }}
-              <p class="text-black-61 fs-5 fw-bold" style="text-align: center">{{ . }}</p>
+              <p class="text-black-61 fs-4 fw-bold" style="text-align: center">{{ . }}</p>
                <!-- <p class="article-font fs-5 fw-bold" style="text-align: center">{{ . }}</p> -->
             {{ end }}
 
@@ -43,7 +43,7 @@
 
           <!-- START: Publication Venue -->
           {{ with .Params.Pub_venue }}
-            <h4 class="text-black-50 fs-6 pb-3 fw-semibold" style="text-align: center">{{ . }}</h4>
+            <h4 class="text-black-50 fs-5 pb-3 fw-semibold" style="text-align: center">{{ . }}</h4>
              <!-- <h4 class="article-font fs-6 pb-3 fw-semibold" style="text-align: center">{{ . }}</h4> -->
           {{ end }}
           <!-- END -->
@@ -63,9 +63,13 @@
                 {{- end }}
                 {{- $isCofirst := in $cofirst $origKey }}
                 <li style="display:inline-block;">
-                  <p class="text-black-61 fs-7 fw-semibold"
+                  <p class="text-black-61 fs-6 fw-semibold"
                     style="margin:0;padding:0;padding-right:20px;">
-                    {{ $name }}{{ if $isCofirst }}*{{ end }}
+                    {{- with $page -}}
+                      <a class="text-black-61 text-decoration-none custom-link" href="{{ .RelPermalink }}">{{ $name }}{{ if $isCofirst }}*{{ end }}</a>
+                    {{- else -}}
+                      {{ $name }}{{ if $isCofirst }}*{{ end }}
+                    {{- end -}}
                   </p>
                 </li>
               {{- end }}
@@ -110,7 +114,7 @@
           {{ end }}
 
           <!-- Article Display -->
-          <div class="article-font fs-5 lh-lg mx-auto" style="max-width: 800px;">
+          <div class="article-font fs-5 lh-lg mx-auto" style="max-width: 100%;">
             {{ .Content }}
           </div>
 

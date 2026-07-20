@@ -1,6 +1,6 @@
 ---
 layout: publication_info  # FIXED! DO NOT CHANGE!
-author: "Osang Kwon"   # your name (do not specify the publication authors, please specify publication authors at "pub_authors")
+author: "SangGyu Park"   # your name (do not specify the publication authors, please specify publication authors at "pub_authors")
 title:  "Don't Get Stuck in Traffic: A Case for Contention-Aware Translation Offloading"  # publication title
 date:   2026-07-08  # publication date (not the blog posting date...)
     
