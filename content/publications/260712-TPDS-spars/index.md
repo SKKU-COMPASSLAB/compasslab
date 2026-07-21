@@ -7,7 +7,7 @@ date:   2026-07-12  # publication date (not the blog posting date...)
 params:
     pub_authors:  # publication authors
         - "/members/gwangeun_byeon"
-        - "seungtae_lee"
+        - "/members/seungtae_lee"
         - "/members/seongwook_kim"
         - "/members/yongjun_kim"
         - "Prashant Nair"
