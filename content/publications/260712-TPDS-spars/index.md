@@ -13,8 +13,8 @@ params:
         - "Prashant Nair"
         - "/members/seokin_hong"
 
-    pub_venue: "Transactions on Parallel and Distributed Systems"  # full venue name (conference and journal name)
-    pub_short_venue: "TPDS"
+    pub_venue: "IEEE Transactions on Parallel and Distributed Systems"  # full venue name (conference and journal name)
+    pub_short_venue: "IEEE TPDS"
 
     # pub_url: https://dl.acm.org/doi/10.1145/3656019.3676900  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
 

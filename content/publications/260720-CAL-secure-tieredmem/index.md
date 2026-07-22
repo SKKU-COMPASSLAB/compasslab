@@ -13,7 +13,7 @@ params:
         - "/members/seokin_hong"
 
     pub_venue: "IEEE Computer Architecture Letters"  # full venue name (conference and journal name)
-    pub_short_venue: "CAL"
+    pub_short_venue: "IEEE CAL"
 
     # pub_url: https://dl.acm.org/doi/10.1145/3656019.3676900  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
 
