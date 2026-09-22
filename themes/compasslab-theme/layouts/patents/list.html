@@ -67,14 +67,21 @@
               </div>
               <!-- END: 발명자 목록 표시 -->
 
-              <!-- START: 출원번호 표시 (출원일은 정렬에만 사용하고 표시하지 않음) -->
+              <!-- START: 등록번호 / 출원번호 표시 (출원일은 정렬에만 사용하고 표시하지 않음) -->
               {{ $country := .Params.patent_country }}
-              {{ with .Params.patent_app_number }}
+              {{ $app := .Params.patent_app_number }}
+              {{ $prefix := "" }}
+              {{ with .Params.patent_app_number }}{{ if and $country (not (hasPrefix . $country)) }}{{ $prefix = printf "%s " $country }}{{ end }}{{ end }}
+              {{ if or .Params.patent_reg_number .Params.patent_app_number }}
                 <p class="conf-text text-black-61 mb-1">
-                  {{ if and $country (not (hasPrefix . $country)) }}{{ $country }} {{ end }}Application No. {{ . }}
+                  {{ with .Params.patent_reg_number }}
+                    <span class="fw-semibold">{{ $prefix }}Patent No. {{ . }}</span>&nbsp;&nbsp;|&nbsp;&nbsp;Application No. {{ $app }}
+                  {{ else }}
+                    {{ $prefix }}Application No. {{ $app }}
+                  {{ end }}
                 </p>
               {{ end }}
-              <!-- END: 출원번호 표시 -->
+              <!-- END: 등록번호 / 출원번호 표시 -->
             </div>
           {{ end }}
         </div>
