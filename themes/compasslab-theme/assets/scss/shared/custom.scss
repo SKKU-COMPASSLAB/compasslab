@@ -22,6 +22,41 @@
     padding-left: 20px;
 }
 
+// 상단 메뉴 하위 메뉴 (Publications > Papers / Patents)
+.nav-hover-dropdown {
+    position: relative;
+
+    .dropdown-menu {
+        min-width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    // 데스크톱(xl 이상, 메뉴가 펼쳐진 상태): 마우스를 올리면 바로 표시
+    @media (min-width: 1200px) {
+        .dropdown-menu {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &:hover > .dropdown-menu,
+        &:focus-within > .dropdown-menu {
+            display: block;
+        }
+    }
+
+    // 모바일/태블릿(햄버거 메뉴): 하위 메뉴를 항상 펼쳐서 표시
+    @media (max-width: 1199.98px) {
+        .dropdown-menu {
+            display: block;
+            position: static;
+            box-shadow: none !important;
+            background: transparent;
+            padding: 0;
+        }
+    }
+}
+
 .custom-blog-content {
     text-align: justify;
     

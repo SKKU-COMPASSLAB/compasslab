@@ -52,8 +52,8 @@
         <ul style="list-style-position: outside; margin-top: 0px; margin-bottom: 0px">
           {{ $site := .Site }}
           {{ $target_class := .Params.Pub_class }}
-          {{ with .Site.GetPage "/publications/" }}
-            {{ range .Pages }}
+          {{ with .Site.GetPage "/publications/papers" }}
+            {{ range where .Pages "Kind" "page" }}
               {{ $pub_class := .Params.Pub_class }}
               {{ if eq $pub_class $target_class}}
                 {{ partial "utilities/publication-card" . }}

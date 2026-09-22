@@ -77,8 +77,8 @@
             {{ $pub_cnt := 0 }}
             <ul style="list-style-position: outside; margin-top: 0px; margin-bottom: 0px">
               {{ $site := .Site }}
-              {{ with .Site.GetPage "/publications/" }}
-                {{ range .Pages }}
+              {{ with .Site.GetPage "/publications/papers" }}
+                {{ range where .Pages "Kind" "page" }}
                   {{ $pub_authors := .Params.Pub_authors }}
                   {{ if in $pub_authors $current_doc_link }}
                     {{ partial "utilities/publication-card" . }}

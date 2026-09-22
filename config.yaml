@@ -78,8 +78,21 @@ menus:
       weight: 6
 
     - name: "Publications"
-      url: "/publications"
+      identifier: "publications"
+      url: "/publications/papers"
       weight: 7
+
+    - name: "Papers"
+      identifier: "papers"
+      parent: "publications"
+      url: "/publications/papers"
+      weight: 1
+
+    - name: "Patents"
+      identifier: "patents"
+      parent: "publications"
+      url: "/publications/patents"
+      weight: 2
 
     - name: "Schedule"
       url: "/schedule"

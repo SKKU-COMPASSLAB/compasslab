@@ -10,9 +10,24 @@
     <div class="collapse navbar-collapse" id="navbarContent">
       <ul class="navbar-nav ms-auto mb-2 mb-xl-0">
         {{ range .Site.Menus.main }}
-          <li class="nav-item text-center">
-            <a class="nav-link fs-5 fw-semibold custom-nav-menu-padding" href="{{ .URL }}">{{ .Name }}</a>
-          </li>
+          {{ if .HasChildren }}
+            <!-- START: 하위 메뉴가 있는 경우 드롭다운으로 표시 (마우스 오버 시 표시, custom.scss 참고) -->
+            <li class="nav-item dropdown nav-hover-dropdown text-center">
+              <a class="nav-link fs-5 fw-semibold custom-nav-menu-padding" href="{{ .URL }}">{{ .Name }}</a>
+              <ul class="dropdown-menu border-0 shadow-sm">
+                {{ range .Children }}
+                  <li>
+                    <a class="dropdown-item fs-6 fw-semibold py-2" href="{{ .URL }}">{{ .Name }}</a>
+                  </li>
+                {{ end }}
+              </ul>
+            </li>
+            <!-- END: 드롭다운 -->
+          {{ else }}
+            <li class="nav-item text-center">
+              <a class="nav-link fs-5 fw-semibold custom-nav-menu-padding" href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+          {{ end }}
         {{ end }}
       </ul>
       <!-- <ul class="navbar-nav ms-xl-3 mb-2 mb-xl-0">

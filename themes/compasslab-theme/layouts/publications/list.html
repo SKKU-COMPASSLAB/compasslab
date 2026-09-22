@@ -13,8 +13,8 @@
         </div>
       </div>
       
-      <!-- 전체 페이지 추출 -->
-      {{ $allPages := .Pages }}
+      <!-- 전체 페이지 추출 (patents 등 하위 섹션 페이지는 제외) -->
+      {{ $allPages := where .Pages "Kind" "page" }}
 
       <!-- Tier 별 정렬 (1차) -->
       {{ $tieredPages := slice }} <!-- Tier 순 정렬 페이지 저장 slice -->

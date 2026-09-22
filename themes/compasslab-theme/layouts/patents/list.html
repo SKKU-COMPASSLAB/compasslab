@@ -1,0 +1,85 @@
+{{ define "main" }}
+  <section class="section blog-list py-5">
+    {{ $site := .Site }} <!-- .Site를 변수에 저장 -->
+    <div class="container">
+      <div class="row justify-content-center pb-3">
+        <div class="col-12 col-xl-6">
+          {{ with .Title }}
+            <h2 class="fs-1 fw-bold text-center text-primary pb-2">{{ . }}</h2>
+          {{ end }}
+          {{ with .Params.description }}
+            <p class="text-black-61 text-center pb-2">{{ . }}</p>
+          {{ end }}
+        </div>
+      </div>
+
+      <!-- 전체 특허 페이지 추출 -->
+      {{ $allPages := where .Pages "Kind" "page" }}
+
+      {{ if not $allPages }}
+        <p class="text-black-61 text-center">No patents have been registered yet.</p>
+      {{ end }}
+
+      <!-- 해외(KR 이외) / 국내(KR) 순으로 나누고, 각 그룹은 출원일(date) 내림차순(최신순) 정렬 -->
+      {{ $groups := slice
+          (dict "name" "International Patents" "pages" (where $allPages "Params.patent_country" "ne" "KR"))
+          (dict "name" "Domestic Patents"      "pages" (where $allPages "Params.patent_country" "eq" "KR")) }}
+
+      {{ range $groups }}
+        {{ if .pages }}
+        <div class="row g-0 pb-4">
+          <div class="col-12">
+            <br>
+            <h3 class="fs-3 fw-bold text-primary">{{ .name }}</h3> <!-- 국내/해외 구분 출력 -->
+          </div>
+
+          {{ $currentYear := "" }} <!-- 현재 연도를 저장할 변수 -->
+          {{ range .pages.ByDate.Reverse }}
+            {{ $patYear := .Date.Format "2006" }} <!-- 특허의 연도만 추출 -->
+            {{ if ne $patYear $currentYear }} <!-- 연도가 바뀌면 새로운 섹션을 생성 -->
+              <div class="col-12">
+                <br>
+                <h3 class="fs-4 fw-bold">{{ $patYear }}</h3> <!-- 연도 출력 -->
+              </div>
+              {{ $currentYear = $patYear }} <!-- 현재 연도를 업데이트 -->
+            {{ end }}
+
+            <div class="col-12">
+              <hr>
+              <!-- START: 특허 명칭 (클릭 없음) -->
+              <h5 class="card-title fw-semibold">{{ .Title }}</h5>
+              <!-- END: 특허 명칭 -->
+
+              <!-- START: 발명자 목록 표시 -->
+              <div class="pb-1">
+                {{- range .Params.patent_inventors }}
+                  {{- $page := $site.GetPage . }}
+                  <li style="display:inline-block;">
+                    <p class="conf-text fs-8" style="margin:0;padding:0;padding-right:10px;">
+                      {{- with $page -}}
+                        <a class="text-black-61 text-decoration-none custom-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                      {{- else -}}
+                        {{ . }}
+                      {{- end -}}
+                    </p>
+                  </li>
+                {{- end }}
+              </div>
+              <!-- END: 발명자 목록 표시 -->
+
+              <!-- START: 출원번호 표시 (출원일은 정렬에만 사용하고 표시하지 않음) -->
+              {{ $country := .Params.patent_country }}
+              {{ with .Params.patent_app_number }}
+                <p class="conf-text text-black-61 mb-1">
+                  {{ if and $country (not (hasPrefix . $country)) }}{{ $country }} {{ end }}Application No. {{ . }}
+                </p>
+              {{ end }}
+              <!-- END: 출원번호 표시 -->
+            </div>
+          {{ end }}
+        </div>
+        {{ end }}
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

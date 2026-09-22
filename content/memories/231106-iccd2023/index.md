@@ -19,4 +19,4 @@ params:
 
 ICCD2023 is held at Washington DC, USA. Seongwook, Sihyung and Yoonho attend to the ICCD2023 conference to publically present the [research work].
 
-[research work]: /publications/231106-conveyor-sa/
+[research work]: /publications/papers/231106-conveyor-sa/
