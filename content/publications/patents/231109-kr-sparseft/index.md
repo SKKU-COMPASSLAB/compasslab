@@ -12,4 +12,5 @@ params:
 
     patent_country: "KR"   # 출원 국가 코드. "KR" = Domestic Patents, 그 외(US, CN, JP, EP ...) = International Patents
     patent_app_number: "10-2023-0154867"   # 출원번호 (출원번호통지서 / Filing Receipt 기준)
+    patent_reg_number: "10-2994174"   # 등록번호 (등록되면 입력, 미등록이면 "" 로 비워둠)
 ---
