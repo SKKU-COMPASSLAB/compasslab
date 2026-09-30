@@ -8,8 +8,8 @@ params:
         - "/members/seokin_hong"
         - "/members/yoonho_jang"
         - "/members/hyeongjun_cho"
-        - "김정래"
-        - "김상호"
+        - "JungRae Kim"
+        - "SangHyo Kim"
 
     patent_country: "KR"   # 출원 국가 코드. "KR" = Domestic Patents, 그 외(US, CN, JP, EP ...) = International Patents
     patent_app_number: "10-2025-0052799"   # 출원번호 (출원번호통지서 / Filing Receipt 기준)

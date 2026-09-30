@@ -8,8 +8,8 @@ params:
         - "/members/seokin_hong"
         - "/members/yoonho_jang"
         - "/members/hyeongjun_cho"
-        - "Jung Rae Kim"
-        - "Sang Hyo Kim"
+        - "JungRae Kim"
+        - "SangHyo Kim"
 
     patent_country: "US"   # 출원 국가 코드. "KR" = Domestic Patents, 그 외(US, CN, JP, EP ...) = International Patents
     patent_app_number: "US 19/649,649"   # 출원번호 (출원번호통지서 / Filing Receipt 기준)
