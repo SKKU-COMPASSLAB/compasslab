@@ -25,8 +25,14 @@ params:
 
     experiences:  # provide your professional experiences
         - {
-            exp_from: "2023",  # start-date of this experience
+            exp_from: "2025",  # start-date of this experience
             exp_to:   "",      # end-date of this experience (make this field empty if you are currently going through this experience)
+            exp_desc: "TheOvalLabs"
+        }
+        - {
+            exp_from: "2023",  # start-date of this experience
+            exp_to:   "2025",      # end-date of this experience (make this field empty if you are currently going through this experience)
             exp_desc: "Master's degree at Sungkyunkwan University"
         }
+        
 ---

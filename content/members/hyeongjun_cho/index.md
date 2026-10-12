@@ -23,7 +23,7 @@ params:
 
 
     enable_sections:  # TODO: this section checks whether to show "Experiences", "Awards and Honors", "Activities" (publications will automatically be added to your page)
-        enable_experiences:   False  # enable "Professional Experience" section
+        enable_experiences:   True  # enable "Professional Experience" section
         enable_awards_honors: False # enable "Awards & Honors" section
         enable_activities:    False  # enable "Professional Activities" section
 
@@ -32,14 +32,14 @@ params:
 
     experiences:  # provide your professional experiences
         - {
-            exp_from: "---",  # start-date of this experience
-            exp_to:   "---",      # end-date of this experience (make this field empty if you are currently going through this experience)
-            exp_desc: "---"
+            exp_from: "2026",  # start-date of this experience
+            exp_to:   "",      # end-date of this experience (make this field empty if you are currently going through this experience)
+            exp_desc: "KETI"
         }
         - {
-            exp_from: "---",
-            exp_to:   "---",
-            exp_desc: "---"
+            exp_from: "2024",
+            exp_to:   "2026",
+            exp_desc: "Master's degree at Sungkyunkwan University"
         }
 
     awards_honor:  # provide the list of awards that you won

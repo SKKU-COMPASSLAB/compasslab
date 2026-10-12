@@ -30,15 +30,21 @@ params:
 
     experiences:  # provide your professional experiences
         - {
-            exp_from: "2018",  # start-date of this experience
-            exp_to:   "2024",      # end-date of this experience (make this field empty if you are currently going through this experience)
-            exp_desc: "Bachelor's degree at Sungkyunkwan University"
+            exp_from: "2026",  # start-date of this experience
+            exp_to:   "",      # end-date of this experience (make this field empty if you are currently going through this experience)
+            exp_desc: "Samsung Electronics"
         }
         - {
             exp_from: "2024",
             exp_to:   "2026",
             exp_desc: "Master's degree at Sungkyunkwan University"
         }
+        - {
+            exp_from: "2018",  # start-date of this experience
+            exp_to:   "2024",      # end-date of this experience (make this field empty if you are currently going through this experience)
+            exp_desc: "Bachelor's degree at Sungkyunkwan University"
+        }
+        
 
     awards_honor:  # provide the list of awards that you won
         - 2014 Best Paper Nominee, IEEE International Conference on Computer Design (ICCD'14)
